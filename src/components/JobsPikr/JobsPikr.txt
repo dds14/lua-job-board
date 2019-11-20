@@ -1,0 +1,28 @@
+  //  🔥 ⏱ This endpoint works on the frontend with Jobspikr API but will be used later on
+  componentDidMount(e) {
+    axios.get("/getjobs").then(res => {
+      this.setState({ jobs: res.data });
+    });
+    axios
+      .get(
+        "https://cors-anywhere.herokuapp.com/https://api.jobspikr.com/v1/data?client_id=lua_jp_6f50e58847&client_auth_key=GN6tnQtPAvwdMqVwkLY6C1RWdvr32P3u8TOe_qSv40Y&search_query_string={search_query_size}&size=50"
+      )
+      .then(res => {
+        this.setState({ spikrJobs: res.data });
+        console.log("spikr mounted on front end ");
+        console.log(this.state.spikrJobs);
+      });
+  }
+
+
+  //  🔥 ⏱ This endpoint works in the index.js with Jobspikr API but will be used later on
+app.get(
+  "https://cors-anywhere.herokuapp.com/https://api.jobspikr.com/v1/data?client_id=lua_jp_6f50e58847&client_auth_key=GN6tnQtPAvwdMqVwkLY6C1RWdvr32P3u8TOe_qSv40Y&search_query_string={search_query_size}&size=50",
+  spikrTest
+);
+
+ //  🔥 ⏱This is the controller function for the endpoint
+const spikrTest = (req, res) => {
+  console.log("trying to hit spikr");
+  res.status(200).json("stuff");
+};

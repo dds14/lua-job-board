@@ -4,12 +4,6 @@ const getJobs = (req, res) => {
   console.log("hit");
 };
 
-const spikrTest = (req, res) => {
-  console.log("trying to hit spikr");
-  res.status(200).json("stuff");
-};
-
 module.exports = {
-  getJobs,
-  spikrTest
+  getJobs
 };

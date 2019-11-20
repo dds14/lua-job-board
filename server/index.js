@@ -25,16 +25,10 @@ massive(process.env.CONNECTION_STRING)
     console.log(err);
   });
 
-const { getJobs, spikrTest } = require("./controllers/jobBoardController");
+const { getJobs } = require("./controllers/jobBoardController");
 
 // Retrieve jobs from database
 app.get("/getjobs", getJobs);
-
-//  🔥 ⏱ Ignore this for now - testing with Jobspikr API
-// app.get(
-//   "https://cors-anywhere.herokuapp.com/https://api.jobspikr.com/v1/data?client_id=lua_jp_6f50e58847&client_auth_key=GN6tnQtPAvwdMqVwkLY6C1RWdvr32P3u8TOe_qSv40Y&search_query_string={search_query_size}&size=50",
-//   spikrTest
-// );
 
 app.listen(SERVER_PORT, () => {
   console.log(`Server listening on ${SERVER_PORT}`);

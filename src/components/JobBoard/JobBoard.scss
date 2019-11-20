@@ -1,26 +1,78 @@
 @import "../../../variables.scss";
 
-.each-div {
-  align-content: center;
-  width: 85%;
-  margin: 0 auto;
-  border: 1px solid $main;
-  display: flex;
-  justify-content: flex-start;
+// .each-div {
+//   align-content: center;
+//   width: 85%;
+//   margin: 0 auto;
+//   border: 1px solid $main;
+//   display: flex;
+//   justify-content: flex-start;
+// }
+
+.entire-display-jobs {
+  border: 2px solid red;
 }
 
-.company-logo {
-  width: 100%;
-  height: 100%;
+.title-of-job-board {
+  border: 2px solid green;
+}
+
+.individual-job-display {
+  border: 2px solid blue;
 }
 
 .company-logo-div {
-  width: 10%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
+  border: 2px solid yellow;
+}
+
+.company-logo {
+  width: 12vw;
+  height: 8vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .company-logo {
+    width: 30%;
+    height: 30%;
+  }
 }
 
 .company-name-div {
-  display: flex;
+  border: 2px solid red;
+}
+
+.job-name-div {
+  border: 2px solid greenyellow;
+}
+
+.location-div {
+  border: 2px solid blue;
+}
+
+.entire-tech-div {
+  border: 3px solid salmon;
+}
+
+.tech-1-div {
+  border: 2px solid grey;
+}
+
+.tech-2-div {
+  border: 2px solid grey;
+}
+
+.tech-3-div {
+  border: 2px solid grey;
+}
+
+.tech-4-div {
+  border: 2px solid grey;
+}
+
+.days-since-posted-div {
+  border: 2px solid lawngreen;
+}
+
+.ello {
+  border: 2px solid darkturquoise;
 }
