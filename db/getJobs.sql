@@ -1,0 +1,1 @@
+SELECT * FROM lua_jobs ORDER BY id DESC;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import "./JobBoard.scss";
 import coinbase from "../../Images/coinbase.png";
 
@@ -7,8 +8,17 @@ export default class JobBoard extends Component {
     super(props);
 
     this.state = {
-      derek: ""
+      jobs: []
     };
+  }
+
+  componentDidMount(e) {
+    axios.get("/getjobs").then(res => {
+      this.setState({ jobs: res.data });
+
+      console.log("OOOOHHHHH");
+      console.log(this.state.jobs);
+    });
   }
 
   render() {
