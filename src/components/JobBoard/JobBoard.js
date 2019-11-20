@@ -17,21 +17,54 @@ export default class JobBoard extends Component {
       this.setState({ jobs: res.data });
 
       console.log("OOOOHHHHH");
-      console.log(this.state.jobs);
+      console.log(this.state.jobs[0].company_name);
     });
   }
-
   render() {
     return (
-      <div>
-        <h1>Find Your Dream Job</h1>
-        <div className="each-div">
-          <div className="company-logo-div">
-            <img src={coinbase} className="company-logo" />
-          </div>
-          <div className="company-name-div">
-            <h1>Coinbase</h1>
-          </div>
+      <div className="display-influencers">
+        <h1 className="home-influencers-title">Our Jobs</h1>
+        <div className="whole-div">
+          {this.state.jobs.map((val, index) => {
+            return (
+              <div className="overall-account-display">
+                {/* <div className="home-account-name">{val.igaccountname}</div> */}
+                <div className="image-div">
+                  {/* <img
+                    src={val.profilepicture}
+                    alt="influencer-profile-picture"
+                    className="home-profile-picture"
+                  /> */}
+                </div>
+                <div className="home-account-atname">
+                  {"Company Name: " + val.company_name}
+                </div>
+                {/* <div className="home-follower-count">
+                  {"Followers: " + val.followercount}
+                </div>
+                <div className="home-average-likes">
+                  {"Average Likes: " + val.averagelikes}
+                </div>
+                <div className="home-price">
+                  {"Engagement Rate: " + val.engagementrate}
+                </div>
+                <div className="home-price">
+                  {"Target Audience: " + val.audiencebreakdown}
+                </div>
+                <div className="post-price">
+                  {"Price Per Post: " + val.priceperpost}
+                </div> */}
+                <div className="ello">
+                  <div className="home-contact-influencer">
+                    <button className="home-contact-influencer-button">
+                      {" "}
+                      <a href={"mailto:" + val.email}>Contact</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
