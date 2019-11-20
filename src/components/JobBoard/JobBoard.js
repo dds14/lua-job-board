@@ -8,18 +8,27 @@ export default class JobBoard extends Component {
     super(props);
 
     this.state = {
-      jobs: []
+      jobs: [],
+      spikrJobs: []
     };
   }
 
   componentDidMount(e) {
     axios.get("/getjobs").then(res => {
       this.setState({ jobs: res.data });
-
-      console.log("OOOOHHHHH");
-      console.log(this.state.jobs[0].company_name);
     });
+    //  🔥 ⏱Ignore this get endpoint for now - testing with Jobspikr API
+    // axios
+    //   .get(
+    //     "https://cors-anywhere.herokuapp.com/https://api.jobspikr.com/v1/data?client_id=lua_jp_6f50e58847&client_auth_key=GN6tnQtPAvwdMqVwkLY6C1RWdvr32P3u8TOe_qSv40Y&search_query_string={search_query_size}&size=50"
+    //   )
+    //   .then(res => {
+    //     this.setState({ spikrJobs: res.data });
+    //     console.log("spikr mounted on front end ");
+    //     console.log(this.state.spikrJobs);
+    //   });
   }
+
   render() {
     return (
       <div className="display-influencers">
