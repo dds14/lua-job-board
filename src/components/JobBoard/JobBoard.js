@@ -39,26 +39,22 @@ export default class JobBoard extends Component {
                 <div className="home-account-atname">
                   {"Company Name: " + val.company_name}
                 </div>
-                {/* <div className="home-follower-count">
-                  {"Followers: " + val.followercount}
+                <div className="home-follower-count">
+                  {"Job Name: " + val.job_name}
                 </div>
                 <div className="home-average-likes">
-                  {"Average Likes: " + val.averagelikes}
+                  {"Location: " + val.job_location}
                 </div>
-                <div className="home-price">
-                  {"Engagement Rate: " + val.engagementrate}
-                </div>
-                <div className="home-price">
-                  {"Target Audience: " + val.audiencebreakdown}
-                </div>
+                <div className="home-price">{"Tech 1: " + val.tech_1}</div>
+                <div className="home-price">{"Tech 2: " + val.tech_2}</div>
                 <div className="post-price">
                   {"Price Per Post: " + val.priceperpost}
-                </div> */}
+                </div>
                 <div className="ello">
                   <div className="home-contact-influencer">
                     <button className="home-contact-influencer-button">
                       {" "}
-                      <a href={"mailto:" + val.email}>Contact</a>
+                      <a href={"mailto:" + val.company_email}>Apply</a>
                     </button>
                   </div>
                 </div>
