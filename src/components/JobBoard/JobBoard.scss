@@ -16,11 +16,20 @@
 }
 
 .individual-job-display {
-  // border: 2px solid blue;
+  border: 2px solid #e6e6e6;
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding: 2.5%;
   padding-bottom: 3%;
+  margin-bottom: 3%;
+}
+
+// Reduces job display width on mobile so it doesn't go outside of the screen
+@media only screen and (max-width: 1250px) {
+  .individual-job-display {
+    width: 92%;
+  }
 }
 
 .whole-div {
@@ -28,13 +37,9 @@
   width: 60%;
 }
 
-@media only screen and (max-width: 900px) {
-  .whole-div {
-    width: 100%;
-  }
-  .company-logo-div {
-    padding-left: 2.5%;
-  }
+.company-logo {
+  width: 60px;
+  height: 100%;
 }
 
 .company-logo-div {
@@ -42,22 +47,28 @@
   height: 100%;
 }
 
-.company-logo {
-  width: 60px;
-  height: 100%;
+@media only screen and (max-width: 1200px) {
+  .whole-div {
+    width: 100%;
+  }
+  .company-logo-div {
+    padding-left: 2.5%;
+  }
+  .individual-job-display {
+    // padding-bottom: 10%;
+    margin-bottom: 4%;
+    padding: 3%;
+    border: 1px solid #e6e6e6;
+  }
+  .company-logo {
+    width: 40px;
+    height: 40%;
+  }
 }
 
 .company-job-tech-div {
   // border: 2px solid orange;
   width: 60vw;
-}
-
-.company-name-div {
-  // border: 2px solid red;
-  display: flex;
-  padding-left: 4.5%;
-  font-size: 30px;
-  font-family: $lato;
 }
 
 .job-name-div {
@@ -66,6 +77,31 @@
   padding-left: 4.5%;
   font-size: 24px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .job-name-div {
+    font-size: 20px;
+  }
+  .company-job-tech-div {
+    // border: 2px solid orange;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.company-name-div {
+  // border: 2px solid red;
+  display: flex;
+  padding-left: 4.5%;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .company-name-div {
+    font-size: 20px;
+    font-weight: lighter;
+  }
 }
 
 .location-div {
@@ -77,52 +113,94 @@
 .entire-tech-div {
   // border: 1px solid greenyellow;
   padding-top: 1.5%;
-  padding-left: 5%;
+  margin-left: 4%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 40%;
+  width: 50%;
   font-size: 18px;
   font-weight: lighter;
 }
 
-@media only screen and (max-width: 900px) {
-  .entire-tech-div {
-    padding-top: 5%;
-    padding-left: 2%;
-    width: 100%;
-  }
-}
-
 .tech-1-div {
   border: 1px solid $main;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 7px;
 }
 
 .tech-2-div {
   border: 1px solid $main;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 7px;
 }
 
 .tech-3-div {
   border: 1px solid $main;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 7px;
 }
 
 .tech-4-div {
   border: 1px solid $main;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 7px;
 }
+
+@media only screen and (max-width: 1250px) {
+  .entire-tech-div {
+    padding-top: 5%;
+    width: 120%;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 1%;
+  }
+  .tech-1-div {
+    border: 1px solid $main;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+// Extra query for mid size screen - need to add a minimum for this also or else it fucks up the mobile
+// @media only screen and (max-width: 950px) {
+//   .entire-tech-div {
+//     width: 100%;
+//   }
+// }
 
 .days-since-posted-div {
   // border: 2px solid lawngreen;
   width: 100%;
 }
 
+// 📱 MOBILE APPLY BUTTON
+.apply-button-div-mobile {
+  margin: auto;
+  position: relative;
+  left: 5%;
+  right: 0;
+}
+
+// @media only screen and (max-width: 50px) {
+
+.apply-button-mobile {
+  background-color: $main;
+  padding: 15px;
+  padding-left: 55px;
+  padding-right: 55px;
+  border-radius: 10px;
+  font-size: 16px;
+  // display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 12%;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+// 🖥 DESKTOP APPLY BUTTON
 .apply-button {
   background-color: $main;
   padding: 15px;
@@ -137,6 +215,20 @@
   letter-spacing: 2px;
   opacity: 1;
   transition: 0.3s;
+}
+
+// Hide left apply button on mobile
+@media only screen and (max-width: 1000px) {
+  .apply-button-div {
+    display: none;
+  }
+}
+
+// Hide bottom apply button on desktop
+@media only screen and (min-width: 1000px) {
+  .apply-button-div-mobile {
+    display: none;
+  }
 }
 
 a:link {

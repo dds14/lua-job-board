@@ -26,7 +26,6 @@ export default class JobBoard extends Component {
           {this.state.jobs.map((val, index) => {
             return (
               <div className="individual-job-display">
-                {/* <div className="home-account-name">{val.igaccountname}</div> */}
                 <div className="company-logo-div">
                   <img
                     src={val.company_logo}
@@ -35,8 +34,8 @@ export default class JobBoard extends Component {
                   />
                 </div>
                 <div className="company-job-tech-div">
-                  <div className="company-name-div">{val.company_name}</div>
                   <div className="job-name-div">{val.job_name}</div>
+                  <div className="company-name-div">{val.company_name}</div>
                   <div className="location-div">
                     {" 📍 " + val.job_location}
                   </div>
@@ -46,18 +45,25 @@ export default class JobBoard extends Component {
                     <div className="tech-3-div">{val.tech_3}</div>
                     <div className="tech-4-div">{val.tech_4}</div>
                   </div>
-                </div>
-                <div className="ello">
-                  <div className="days-since-posted-div">
-                    {"Posted " + val.days_since_posted + " ago"}
-                  </div>
-                  <div className="apply-button-div">
-                    <button className="apply-button">
+                  <div className="apply-button-div-mobile">
+                    <button className="apply-button-mobile">
                       {" "}
                       <a href={"mailto:" + val.company_email}>Apply</a>
                     </button>
                   </div>
                 </div>
+                <div className="ello">
+                  <div className="days-since-posted-div">
+                    {"Posted " + val.days_since_posted + " ago"}
+                  </div>
+                </div>
+                <div className="apply-button-div">
+                  <button className="apply-button">
+                    {" "}
+                    <a href={"mailto:" + val.company_email}>Apply</a>
+                  </button>
+                </div>
+                {/* individual job display ends at the div below */}
               </div>
             );
           })}
