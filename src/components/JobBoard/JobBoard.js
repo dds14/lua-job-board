@@ -52,10 +52,8 @@ export default class JobBoard extends Component {
                     </button>
                   </div>
                 </div>
-                <div className="ello">
-                  <div className="days-since-posted-div">
-                    {"Posted " + val.days_since_posted + " ago"}
-                  </div>
+                <div className="days-since-posted-div">
+                  {"Posted " + val.days_since_posted + " ago"}
                 </div>
                 <div className="apply-button-div">
                   <button className="apply-button">
