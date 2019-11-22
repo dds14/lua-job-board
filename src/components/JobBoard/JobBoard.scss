@@ -1,78 +1,145 @@
 @import "../../../variables.scss";
 
-// .each-div {
-//   align-content: center;
-//   width: 85%;
-//   margin: 0 auto;
-//   border: 1px solid $main;
-//   display: flex;
-//   justify-content: flex-start;
-// }
-
 .entire-display-jobs {
-  border: 2px solid red;
+  // border: 5px solid yellowgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $lato;
 }
 
 .title-of-job-board {
-  border: 2px solid green;
+  // border: 2px solid green;
+  color: $main;
+  font-family: $lato;
+  font-size: 44px;
 }
 
 .individual-job-display {
-  border: 2px solid blue;
+  // border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 3%;
 }
 
-.company-logo-div {
-  border: 2px solid yellow;
+.whole-div {
+  // border: 3px solid red;
+  width: 60%;
 }
 
-.company-logo {
-  width: 12vw;
-  height: 8vh;
-}
-
-@media only screen and (max-width: 600px) {
-  .company-logo {
-    width: 30%;
-    height: 30%;
+@media only screen and (max-width: 900px) {
+  .whole-div {
+    width: 100%;
+  }
+  .company-logo-div {
+    padding-left: 2.5%;
   }
 }
 
+.company-logo-div {
+  // border: 2px solid yellow;
+  height: 100%;
+}
+
+.company-logo {
+  width: 60px;
+  height: 100%;
+}
+
+.company-job-tech-div {
+  // border: 2px solid orange;
+  width: 60vw;
+}
+
 .company-name-div {
-  border: 2px solid red;
+  // border: 2px solid red;
+  display: flex;
+  padding-left: 4.5%;
+  font-size: 30px;
+  font-family: $lato;
 }
 
 .job-name-div {
-  border: 2px solid greenyellow;
+  // border: 2px solid greenyellow;
+  display: flex;
+  padding-left: 4.5%;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .location-div {
-  border: 2px solid blue;
+  // border: 2px solid blue;
+  display: flex;
+  padding-left: 4.5%;
 }
 
 .entire-tech-div {
-  border: 3px solid salmon;
+  // border: 1px solid greenyellow;
+  padding-top: 1.5%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 900px) {
+  .entire-tech-div {
+    padding-top: 5%;
+    padding-left: 2%;
+    width: 100%;
+  }
 }
 
 .tech-1-div {
-  border: 2px solid grey;
+  border: 1px solid $main;
+  border-radius: 25px;
+  padding: 7px;
 }
 
 .tech-2-div {
-  border: 2px solid grey;
+  border: 1px solid $main;
+  border-radius: 25px;
+  padding: 7px;
 }
 
 .tech-3-div {
-  border: 2px solid grey;
+  border: 1px solid $main;
+  border-radius: 25px;
+  padding: 7px;
 }
 
 .tech-4-div {
-  border: 2px solid grey;
+  border: 1px solid $main;
+  border-radius: 25px;
+  padding: 7px;
 }
 
 .days-since-posted-div {
-  border: 2px solid lawngreen;
+  // border: 2px solid lawngreen;
+  width: 100%;
 }
 
-.ello {
-  border: 2px solid darkturquoise;
+.apply-button {
+  background-color: $main;
+  padding: 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  // border-radius: 45px;
+  margin-top: 35%;
+  margin-left: 15%;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
 }

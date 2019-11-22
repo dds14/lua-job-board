@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <header>
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Lua | Jobs for Bootcamp Grads</h1>
         <JobBoard />
       </header>
     </div>

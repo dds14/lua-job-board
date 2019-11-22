@@ -34,27 +34,25 @@ export default class JobBoard extends Component {
                     className="company-logo"
                   />
                 </div>
-                <div className="company-name-div">
-                  {"Company Name: " + val.company_name}
-                </div>
-                <div className="job-name-div">
-                  {"Job Name: " + val.job_name}
-                </div>
-                <div className="location-div">
-                  {"Location: " + val.job_location}
-                </div>
-                <div className="entire-tech-div">
-                  <div className="tech-1-div">{"Tech 1: " + val.tech_1}</div>
-                  <div className="tech-2-div">{"Tech 2: " + val.tech_2}</div>
-                  <div className="tech-3-div">{"Tech 3: " + val.tech_3}</div>
-                  <div className="tech-4-div">{"Tech 4: " + val.tech_4}</div>
-                </div>
-                <div className="days-since-posted-div">
-                  {"Days Since Posted: " + val.days_since_posted}
+                <div className="company-job-tech-div">
+                  <div className="company-name-div">{val.company_name}</div>
+                  <div className="job-name-div">{val.job_name}</div>
+                  <div className="location-div">
+                    {" 📍 " + val.job_location}
+                  </div>
+                  <div className="entire-tech-div">
+                    <div className="tech-1-div">{val.tech_1}</div>
+                    <div className="tech-2-div">{val.tech_2}</div>
+                    <div className="tech-3-div">{val.tech_3}</div>
+                    <div className="tech-4-div">{val.tech_4}</div>
+                  </div>
                 </div>
                 <div className="ello">
-                  <div className="home-contact-influencer">
-                    <button className="home-contact-influencer-button">
+                  <div className="days-since-posted-div">
+                    {"Posted " + val.days_since_posted + " ago"}
+                  </div>
+                  <div className="apply-button-div">
+                    <button className="apply-button">
                       {" "}
                       <a href={"mailto:" + val.company_email}>Apply</a>
                     </button>
