@@ -8,14 +8,20 @@ export default class JobBoard extends Component {
     super(props);
 
     this.state = {
-      jobs: []
+      jobs: [],
+      openDropdown: false
     };
+    this.handleDropdown = this.handleDropdown.bind(this);
   }
 
   componentDidMount(e) {
     axios.get("/getjobs").then(res => {
       this.setState({ jobs: res.data });
     });
+  }
+
+  handleDropdown(e) {
+    this.setState({ openDropdown: !this.state.openDropdown });
   }
 
   render() {
@@ -66,6 +72,15 @@ export default class JobBoard extends Component {
             );
           })}
         </div>
+        <button
+          type="button"
+          className="collapsible"
+          onClick={this.handleDropdown}
+        ></button>
+        <div className="content">
+          <p>i made a collapsible wow</p>
+        </div>
+        {this.state.openDropdown === true ? <h1>true</h1> : <h1>false</h1>}
       </div>
     );
   }
