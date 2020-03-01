@@ -33,14 +33,7 @@ export default class Hero extends Component {
     return (
       <div className="entire-hero-div">
         <div className="hero-left-side-div">
-          <div className="land-a-job-div">
-            <h1 className="land-a-job-as-a-text">Land A Job As A</h1>
-          </div>
-          <div>
-            <h1>
-              <span className="text-that-changes">{textThatChanges}</span>
-            </h1>
-          </div>
+          <h1>left side</h1>
         </div>
         <div className="hero-right-side-div">
           <h1>right side</h1>
@@ -49,3 +42,29 @@ export default class Hero extends Component {
     );
   }
 }
+
+//     return (
+//       <div className="entire-hero-div">
+//         <div className="hero-left-side-div">
+//           {/* LAND A JOB + TEXT CHANGE DIV STARTS */}
+//           <div className="fuck">
+//             <div className="land-a-job-div">
+//               <h1 className="land-a-job-as-a-text">Become A</h1>
+//             </div>
+//             <h1>
+//               <span className="text-that-changes">{textThatChanges}</span>
+//             </h1>
+//           </div>
+//           {/* LAND A JOB + TEXT CHANGE DIV ENDS */}
+//           <div className="tagline-div">
+//             We help you land a job in the tech industry without a college
+//             degree.
+//           </div>
+//         </div>
+//         <div className="hero-right-side-div">
+//           <h1>right side</h1>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
