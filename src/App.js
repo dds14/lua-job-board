@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./Images/logo.png";
 import JobBoard from "./components/JobBoard/JobBoard";
+import MainJobBoard from "./components/MainJobBoard/MainJobBoard";
 import "./App.css";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <header>
         <img src={logo} className="App-logo" alt="logo" />
-        <JobBoard />
+        {/* <JobBoard /> */}
+        <MainJobBoard />
       </header>
     </div>
   );
