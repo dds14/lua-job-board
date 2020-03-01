@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Hero.scss";
 
 const textArray = [
@@ -33,16 +34,43 @@ export default class Hero extends Component {
     return (
       <div className="entire-hero-div">
         <div className="hero-left-side-div">
-          <h1>left side</h1>
+          <div className="left-empty-space-desktop"></div>
+          <div className="become-a-entire-div">
+            <div className="become-a-developer-div">Become A Developer</div>
+            <div className="tagline-div">
+              Lua helps you land a job as a self-taught or bootcamp developer.
+            </div>
+            <div className="hero-buttons-div">
+              <a
+                href="https://jobs.trylua.com/join/"
+                target="_blank"
+                className="hero-learn-more-button"
+              >
+                Learn More
+              </a>
+              <a
+                href="https://jobs.trylua.com/join/"
+                target="_blank"
+                className="hero-view-jobs-button"
+              >
+                See Our Jobs
+              </a>
+            </div>
+          </div>
         </div>
         <div className="hero-right-side-div">
-          <h1>right side</h1>
+          <img
+            className="hero-image"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+            alt="Software Developer Working"
+          />
         </div>
       </div>
     );
   }
 }
 
+// Original try below. Had trouble with the changing text moving the "become a" div to the left
 //     return (
 //       <div className="entire-hero-div">
 //         <div className="hero-left-side-div">

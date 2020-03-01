@@ -8,10 +8,11 @@ $font: "Quicksand", sans-serif;
 .navbar {
   font-family: $main-font;
   text-decoration: none;
-
   //   border: 2px solid royalblue;
   display: flex;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
   justify-content: space-between;
 }
 
