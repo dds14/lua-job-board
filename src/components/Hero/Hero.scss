@@ -10,12 +10,14 @@
 .hero-left-side-div {
   border: 1px solid blue;
   display: flex;
-  width: 50%;
+  width: 100%;
+  font-size: 24px;
 }
 
 .hero-right-side-div {
   border: 1px solid blue;
-  width: 50%;
+  //   width: 50%;
+  display: none;
 }
 
 .land-a-job-div {
@@ -30,4 +32,18 @@
 
 .text-that-changes {
   color: $main;
+}
+
+@media (max-width: 1200px) {
+  .hero-left-side-div {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .land-a-job-div {
+    border: 1px solid blue;
+    width: 100%;
+    justify-content: center;
+  }
 }

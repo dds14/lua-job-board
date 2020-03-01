@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import "./Hero.scss";
 
 const textArray = [
-  "Developer",
+  "Web Developer",
   "Designer",
   "Data Scientist",
-  "Mobile Developer",
   "Frontend Engineer",
-  "Beyond"
+  "Mobile Developer",
+  "Backend Engineer"
 ];
 
 export default class Hero extends Component {
