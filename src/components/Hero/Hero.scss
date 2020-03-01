@@ -4,14 +4,30 @@
   border: 1px solid red;
   display: flex;
   margin-bottom: 5%;
+  height: 70vh;
 }
 
 .hero-left-side-div {
   border: 1px solid blue;
+  display: flex;
   width: 50%;
 }
 
 .hero-right-side-div {
   border: 1px solid blue;
   width: 50%;
+}
+
+.land-a-job-div {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.land-a-job-as-a-text {
+  margin-right: 2%;
+}
+
+.text-that-changes {
+  color: $main;
 }
