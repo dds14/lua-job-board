@@ -1,19 +1,20 @@
 import React from "react";
-import logo from "./Images/logo.png";
 import { HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import MainJobBoard from "./components/MainJobBoard/MainJobBoard";
 import "./App.css";
+import routes from "./routes";
 
 function App() {
   return (
     <HashRouter>
       <div className="App">
         <header>
-          <Navbar />
+          {routes}
+          {/* <Navbar />
           <Hero />
-          <MainJobBoard />
+          <MainJobBoard /> */}
         </header>
       </div>
     </HashRouter>
