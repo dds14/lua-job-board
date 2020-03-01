@@ -1,0 +1,17 @@
+@import "../../../variables.scss";
+
+.entire-hero-div {
+  border: 1px solid red;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.hero-left-side-div {
+  border: 1px solid blue;
+  width: 50%;
+}
+
+.hero-right-side-div {
+  border: 1px solid blue;
+  width: 50%;
+}

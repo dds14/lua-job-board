@@ -9,27 +9,8 @@ export default class Navbar extends Component {
   constructor() {
     super();
     this.state = {
-      loggedIn: true,
-      id: null
+      readytouse: null
     };
-    this.logout = this.logout.bind(this);
-  }
-
-  componentDidMount() {
-    axios.get("/api/users").then(res => {
-      this.setState({
-        id: res.data.userId
-      });
-    });
-  }
-
-  logout() {
-    // console.log(this.props);
-    this.props.logout().then(res => {
-      this.setState({
-        id: null
-      });
-    });
   }
 
   render() {

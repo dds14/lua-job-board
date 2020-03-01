@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "./Images/logo.png";
-import Navbar from "./components/Navbar/Navbar";
 import { HashRouter } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
 import MainJobBoard from "./components/MainJobBoard/MainJobBoard";
 import "./App.css";
 
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <header>
           <Navbar />
+          <Hero />
           <MainJobBoard />
         </header>
       </div>
