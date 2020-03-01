@@ -1,49 +1,99 @@
 @import "../../../variables.scss";
 
 .entire-hero-div {
-  border: 1px solid red;
+  border: 3px solid red;
   display: flex;
   margin-bottom: 5%;
   height: 70vh;
+  font-family: $font;
 }
 
-.hero-left-side-div {
-  border: 1px solid blue;
-  display: flex;
-  width: 100%;
-  font-size: 24px;
-}
-
-.hero-right-side-div {
-  border: 1px solid blue;
-  //   width: 50%;
-  display: none;
-}
-
-.land-a-job-div {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-}
-
-.land-a-job-as-a-text {
-  margin-right: 2%;
-}
-
-.text-that-changes {
-  color: $main;
-}
-
-@media (max-width: 1200px) {
-  .hero-left-side-div {
-    font-size: 18px;
+// DESKTOP STYLE
+@media (min-width: 1200px) {
+  .entire-hero-div {
+    border: 5px solid blueviolet;
     display: flex;
-    flex-direction: column;
-    align-items: center;
   }
-  .land-a-job-div {
-    border: 1px solid blue;
-    width: 100%;
-    justify-content: center;
+  .hero-left-side-div {
+    border: 3px solid red;
+    width: 50%;
+  }
+  .hero-right-side-div {
+    border: 3px solid blue;
+    width: 50%;
   }
 }
+
+// SPACE
+// SPACE
+// SPACE
+// SPACE
+// SPACE
+// SPACE
+// SPACE
+// SPACE
+// SPACE
+// SPACE - BELOW WAS FIRST TRY AND IT WAS SO FUCKED THAT I RESTARTED ABOVE
+// .hero-left-side-div {
+//   border: 1px solid blue;
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   font-size: 24px;
+// }
+
+// // HERO DESKTOP SPECIFIC CHANGES
+// @media (min-width: 1200px) {
+//   .hero-left-side-div {
+//     height: 20vh;
+//   }
+// }
+
+// // .tagline-div {
+// //   border: 3px red;
+// //   height: 100vh;
+// //   width: 45%;
+// // }
+
+// .fuck {
+//   border: 2px solid red;
+//   width: 100vw;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
+
+// .hero-right-side-div {
+//   //   border: 1px solid blue;
+//   //   width: 50%;
+//   display: none;
+// }
+
+// .land-a-job-div {
+//   border: 2px solid blue;
+//   display: flex;
+//   justify-content: flex-end;
+//   width: 25vw;
+// }
+
+// .land-a-job-as-a-text {
+//   margin-right: 1%;
+// }
+
+// .text-that-changes {
+//   color: $main;
+// }
+
+// @media (max-width: 1200px) {
+//   .hero-left-side-div {
+//     font-size: 18px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   .land-a-job-div {
+//     border: 1px solid blue;
+//     width: 100%;
+//     justify-content: center;
+//   }
+// }
