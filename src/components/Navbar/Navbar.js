@@ -43,14 +43,24 @@ export default class Navbar extends Component {
           <Link to="/">
             <img src={logo} className="nav-logo" alt="logo" />
           </Link>
-          <p>What's Lua?</p>
+          <p className="nav-whats-lua-paragraph">What's Lua?</p>
         </div>
         <div className="nav-right-side">
-          <p>Home</p>
-          <p>Job Board</p>
+          <Link to="/" className="nav-home-text">
+            Home
+          </Link>
+          <Link to="/job-board" className="nav-job-board-text">
+            Job Board
+          </Link>
           <p>Blog</p>
-          <p>Newsletter</p>
           <p>Contact</p>
+          <a
+            href="https://jobs.trylua.com/join/"
+            target="_blank"
+            className="newsletter-navbar-a-href"
+          >
+            Get Jobs Weekly
+          </a>
         </div>
       </div>
     );

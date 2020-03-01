@@ -2,10 +2,16 @@
 
 // nav only
 $nav-background: white;
+$nav-font-size: 18px;
+$font: "Quicksand", sans-serif;
 
 .navbar {
-  border: 2px solid royalblue;
+  font-family: $main-font;
+  text-decoration: none;
+
+  //   border: 2px solid royalblue;
   display: flex;
+  font-size: 18px;
   justify-content: space-between;
 }
 
@@ -43,6 +49,10 @@ $nav-background: white;
   flex-direction: row;
 }
 
+.nav-whats-lua-paragraph {
+  margin-left: 5%;
+}
+
 // LOGO IMG
 .nav-logo {
   display: flex;
@@ -50,11 +60,13 @@ $nav-background: white;
   margin-left: 30px;
   width: 200px;
   height: 100px;
+  margin-bottom: 1%;
 }
 
 .nav-right-side {
-  border: 1px solid red;
+  //   border: 1px solid red;
   height: 90%;
+  text-decoration: none;
   width: 40%;
   display: flex;
   justify-content: space-evenly;
@@ -76,6 +88,36 @@ $nav-background: white;
     left: 1.5%;
     top: 1.5%;
   }
+}
+
+.nav-home-text {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-job-board-text {
+  text-decoration: none;
+  color: black;
+}
+
+.newsletter-navbar-a-href {
+  text-decoration: none;
+  background-color: $main;
+  color: white;
+  margin-top: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 10px;
+  padding-left: 15px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.newsletter-navbar-a-href:hover {
+  opacity: $text-hover;
 }
 
 /// SPACE
@@ -115,6 +157,7 @@ $nav-background: white;
 //   font-family: "Quicksand", sans-serif;
 //   font-size: $nav-font-size;
 //   text-decoration: none;
+
 // }
 
 // .nav-learn {
