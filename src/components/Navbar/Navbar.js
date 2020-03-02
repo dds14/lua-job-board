@@ -33,7 +33,9 @@ export default class Navbar extends Component {
           <Link to="/job-board" className="nav-job-board-text">
             Job Board
           </Link>
-          <p>Blog</p>
+          <Link to="/blog" className="nav-job-board-text">
+            Blog
+          </Link>
           <p>Contact</p>
           <a
             href="https://jobs.trylua.com/join/"

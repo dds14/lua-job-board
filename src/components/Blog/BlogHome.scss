@@ -1,0 +1,123 @@
+@import "../../../variables.scss";
+
+.entire-blog-div {
+  //   border: 3px solid $main;
+  background-color: #fefdfede;
+  z-index: -1;
+  padding-top: 2%;
+  padding-bottom: 15%;
+  font-family: $font;
+  //   height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entire-blog-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.entire-blog-tagline {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 15%;
+}
+
+.blog-frame {
+  //   border: 3px solid orange;
+  border-radius: 2%;
+  background-color: white;
+  width: 34.75%;
+  height: 100%;
+  -moz-box-shadow: 0px 3px 8px rgb(187, 187, 187);
+  -webkit-box-shadow: 0px 3px 8px rgb(187, 187, 187);
+  box-shadow: 0px 3px 8px rgb(187, 187, 187);
+}
+
+// fix up the image CSS once there's multiple to look at
+.blog-image-div {
+  height: 100%;
+  width: 100%;
+  margin-bottom: -1%;
+}
+
+.blog-image {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 450px;
+  max-height: 450px;
+}
+
+.blog-post-title-div {
+  background-color: white;
+  margin-top: 4%;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.blog-post-snippet-div {
+  background-color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 8px;
+  margin-bottom: 4%;
+}
+
+.blog-post-snippet {
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+.blog-read-more-button {
+  min-width: 22%;
+  text-decoration: none;
+  background-color: $main;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 3%;
+  margin-top: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 18px;
+  padding-left: 18px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.blog-frame-seperator {
+  margin-top: 120px;
+}
+
+.blog-post-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .blog-frame {
+    // border: 3px solid orange;
+    width: 70%;
+    height: 50%;
+  }
+  .blog-image {
+    min-width: 70vw;
+    max-width: 70vw;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .blog-post-title {
+    font-size: 24px;
+    margin-bottom: 10%;
+  }
+  .blog-post-snippet {
+    font-size: 16px;
+  }
+}
