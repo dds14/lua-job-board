@@ -42,14 +42,14 @@ export default class Hero extends Component {
             </div>
             <div className="hero-buttons-div">
               <a
-                href="https://jobs.trylua.com/join/"
+                href="/learn-more"
                 target="_blank"
                 className="hero-learn-more-button"
               >
                 Learn More
               </a>
               <a
-                href="https://jobs.trylua.com/join/"
+                href="/job-board"
                 target="_blank"
                 className="hero-view-jobs-button"
               >
