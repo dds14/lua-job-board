@@ -23,6 +23,7 @@ export default class MainJobBoard extends Component {
 
   handleDropdown(e) {
     this.setState({ openDropdown: !this.state.openDropdown });
+    console.log("DROPDOWN HIT");
   }
 
   render() {
@@ -30,44 +31,50 @@ export default class MainJobBoard extends Component {
       <div>
         {this.state.jobs.map((val, index) => {
           return (
-            // <div className={"myclass-" + val.id}>
-            <div
-              className="all-jobs"
-              onClick={this.handleDropdown}
-              onClick={() => this.setState({ dropdownId: val.id })}
-            >
-              <h1>{this.state.dropdownId}</h1>
-              <div className="pre-dropdown-container">
-                <div className="company-logo-div">
-                  <img className="company-logo" src={val.company_logo}></img>
-                </div>
-                <div className="title-and-company-div">
-                  <div className="title-div">{val.job_name}</div>
-                  <div className="company-div">
-                    <p className="company-paragraph">{val.company_name}</p>
-                    <p> | </p>
-                    <p className="location-paragraph">
-                      <strong>{val.job_location}</strong>
-                    </p>
+            <div onClick={this.handleDropdown}>
+              <div
+                className="all-jobs"
+                // onClick={this.handleDropdown}
+                onClick={() => this.setState({ dropdownId: val.id })}
+              >
+                <h1>{this.state.dropdownId}</h1>
+                {/* <h1>{val.id}</h1> */}
+                <div className="pre-dropdown-container">
+                  <div className="company-logo-div">
+                    <img className="company-logo" src={val.company_logo}></img>
+                  </div>
+                  <div className="title-and-company-div">
+                    <div className="title-div">{val.job_name}</div>
+                    <div className="company-div">
+                      <p className="company-paragraph">{val.company_name}</p>
+                      <p> | </p>
+                      <p className="location-paragraph">
+                        <strong>{val.job_location}</strong>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="days-ago-div">{val.days_since_posted}</div>
+                  <div className="apply-now-div">
+                    <form action={val.company_email} target="_blank">
+                      <button type="submit" className="apply-now-button">
+                        Apply
+                      </button>
+                    </form>
                   </div>
                 </div>
-                <div className="days-ago-div">{val.days_since_posted}</div>
-                <div className="apply-now-div">
-                  <form action={val.company_email} target="_blank">
-                    <button type="submit" className="apply-now-button">
-                      Apply
-                    </button>
-                  </form>
+                {/* <div className="content"></div> */}
+                <div
+                  className={
+                    "myclass-" + (this.state.dropdownId === val.id ? val.id : 0)
+                  }
+                >
+                  {this.state.openDropdown === true ? (
+                    // <h1>{val.id}</h1>
+                    <h1>{val.job_description}</h1>
+                  ) : (
+                    <h1>false</h1>
+                  )}
                 </div>
-              </div>
-              {/* <div className="content"></div> */}
-              <div className={"myclass-" + val.id}>
-                {this.state.openDropdown === true ? (
-                  <h1>{val.id}</h1>
-                ) : (
-                  // <h1>true</h1>
-                  <h1>false></h1>
-                )}
               </div>
             </div>
           );
