@@ -8,7 +8,7 @@ const MainJobBoardItem = ({ item }) => {
   return (
     <React.Fragment>
       <div className="all-jobs" onClick={handleDropdown}>
-        <h1>{item.id}</h1>
+        {/* <h1>{item.id}</h1> */}
         <div className="pre-dropdown-container">
           <div className="company-logo-div">
             <img className="company-logo" src={item.company_logo}></img>
