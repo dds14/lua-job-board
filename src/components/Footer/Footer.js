@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import fb_icon from "../../Images/fb_icon.png";
 import ig_icon from "../../Images/ig_icon.png";
 import twitter_icon from "../../Images/twitter_icon.png";
-import logo from "../../Images/logo.png";
+import footer_logo from "../../Images/footer_logo.png";
 
 import "./Footer.scss";
 
@@ -24,7 +24,9 @@ export default class Footer extends Component {
           </div> */}
         {/* </div> */}
         <div className="footer-far-left">
-          <h2 className="footer-far-left-header">Lua | Jobs Without Degrees</h2>
+          <h2 className="footer-far-left-header">
+            <img src={footer_logo} className="footer-logo" alt="lua-logo" />
+          </h2>
           <div className="footer-far-left-content">
             <Link to="/job-board" className="footer-far-left-paragraph">
               Job Board
@@ -49,23 +51,30 @@ export default class Footer extends Component {
           <h2 className="footer-left-header">Get in Touch</h2>
           <div className="footer-left-content">
             <p className="footer-left-paragraph">+1 (202) 503-4761</p>
-            <br />
-            <p className="footer-left-paragraph">hello@nanoapp.com</p>
-            <br />
+            {/* <br /> */}
+            <p className="footer-left-paragraph">hello@luajobs.com</p>
+            {/* <br /> */}
             <p className="footer-left-paragraph">
-              145 2nd Ave, New York, NY 10021
+              Made with &#9829; in Washington, DC
             </p>
           </div>
           {/* <p className="copyright">Copyright © 2019 Nano App Inc.</p> */}
         </div>
         <div className="footer-right">
-          <h2 className="footer-left-header">Keep Connected</h2>
+          <h2 className="footer-left-header">Stay Connected</h2>
           <div className="footer-left-content">
             <div className="footer-social-icons">
               <div className="facebook-footer">
                 <img src={fb_icon} className="fb-logo" alt="facebook" />
-
-                <p className="facebook-word">Facebook</p>
+                <p className="facebook-word">
+                  <a
+                    className="facebook-a-href"
+                    href="https://www.facebook.com/luajobs/Facebook"
+                    target="_blank"
+                  >
+                    Facebook
+                  </a>
+                </p>
               </div>
               <div className="insta-footer">
                 <img src={ig_icon} className="insta-logo" alt="facebook" />
@@ -75,7 +84,7 @@ export default class Footer extends Component {
                 <img
                   src={twitter_icon}
                   className="twitter-logo"
-                  alt="facebook"
+                  alt="twitter"
                 />
                 <p className="twitter-word">Twitter</p>
               </div>

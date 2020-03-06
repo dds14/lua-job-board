@@ -4,16 +4,18 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 10%;
 }
 
 .footer {
+  // border: 1px solid red;
+  margin-top: 10%;
   font-family: $main-font;
-  //   border: 3px solid red;
   //   background: #414a4c;
-  background: $main;
+  background: black;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 40vh;
   width: 100%;
   padding-bottom: 50px;
@@ -23,7 +25,7 @@
 }
 
 .footer-left {
-  //   border: 1px solid blue;
+  // border: 1px solid blue;
   width: 33%;
   display: flex;
   position: relative;
@@ -39,8 +41,9 @@
 }
 
 .footer-logo {
-  max-width: 25vw;
-  max-height: 25vh;
+  max-width: 8vw;
+  max-height: 10vh;
+  min-height: 4vh;
   //   display: flex;
 }
 
@@ -66,18 +69,18 @@
 }
 
 .footer-left-header {
-  border: 1px solid orange;
+  // border: 1px solid orange;
   display: flex;
   justify-content: center;
   font-size: 26px;
   position: relative;
-  left: 8%;
-  width: 90%;
-  height: 30%;
+  //   left: 8%;
+  width: 100%;
+  //   height: 30%;
 }
 
 .footer-far-left-header {
-  //   border: 1px solid orange;
+  // border: 1px solid orange;
   display: flex;
   justify-content: center;
   font-size: 26px;
@@ -89,22 +92,32 @@
 }
 
 .footer-left-content {
+  // border: 1px solid orange;
   position: relative;
-  left: 8%;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 5%;
+  line-height: 2;
+  margin-top: 3%;
 }
 
 .footer-far-left-content {
+  // border: 1px solid orange;
+  // position: relative;
+  // margin-top: 3%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-evenly;
+  // align-items: center;
+  // font-size: 16px;
+  // font-weight: bold;
+  // starts here
+  padding-top: 4.5%;
+  // border: 1px solid orange;
   position: relative;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
   font-size: 16px;
   font-weight: bold;
+  line-height: 2.5;
+  margin-top: 3%;
 }
 
 .footer-far-left-paragraph {
@@ -130,23 +143,30 @@
 }
 
 .facebook-footer {
-  //   border: 1px solid red;
+  // border: 1px solid red;
   align-items: center;
   display: flex;
   margin-bottom: 2%;
+  min-width: 25%;
+  max-width: 25%;
 }
 
 .insta-footer {
-  //   border: 1px solid red;
+  // border: 1px solid red;
   align-items: center;
   display: flex;
   margin-bottom: 2%;
+  min-width: 25%;
+  max-width: 25%;
 }
 
 .twitter-footer {
-  //   border: 1px solid red;
+  // border: 1px solid red;
   align-items: center;
   display: flex;
+  margin-bottom: 2%;
+  min-width: 25%;
+  max-width: 25%;
 }
 
 .fb-logo {
@@ -155,7 +175,12 @@
 }
 
 .facebook-word {
-  margin-left: 2%;
+  margin-left: 12%;
+}
+
+.facebook-a-href {
+  text-decoration: none;
+  color: white;
 }
 
 .insta-logo {
@@ -164,7 +189,7 @@
 }
 
 .insta-word {
-  margin-left: 2%;
+  margin-left: 12%;
 }
 
 .twitter-logo {
@@ -173,48 +198,18 @@
 }
 
 .twitter-word {
-  margin-left: 2%;
+  margin-left: 12%;
 }
 
-// FORM DESIGN
-
-.footer-form {
-  width: 63%;
+.footer-social-icons {
+  // border: 1px solid blue;
+  //   height: 30vh;
   display: flex;
-  //   justify-content: center;
   flex-direction: column;
-  color: white;
+  align-items: center;
 }
 
-// .footer-form-div {
-//   //   border: 1px solid slateblue;
-//   margin-top: 3%;
-//   //   position: relative;
-//   left: 8%;
-// }
-
-.footer-name-input,
-.footer-email-input,
-.footer-phone-input,
-.footer-message-input {
-  background-color: rgba(55, 253, 252, 0.9);
-  border-radius: 3px;
-  color: white;
-  //   background: trans-ent;
-}
-
-.footer-name-input::placeholder,
-.footer-email-input::placeholder,
-.footer-phone-input::placeholder,
-.footer-message-input::placeholder {
-  color: white;
-}
-
-.footer-form-submit-button {
-  width: 30%;
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .footer {
     display: flex;
     height: 100%;
@@ -239,12 +234,15 @@
     // border: 1px solid red;
     display: flex;
     justify-content: center;
+    margin-bottom: 0%;
+    font-size: 34px;
   }
   .footer-far-left-header {
     left: 0%;
     // border: 1px solid red;
     display: flex;
     justify-content: center;
+    margin-bottom: 0%;
   }
   .footer-left-content {
     // border: 1px solid orange;
@@ -253,12 +251,15 @@
     width: 90%;
     margin-top: 3%;
     margin-bottom: 3%;
-    line-height: 0.5;
+    line-height: 1.5;
     font-weight: bold;
+    font-size: 18px;
   }
   .footer-far-left-content {
     // border: 1px solid red;
     width: 90%;
+    margin-bottom: 3%;
+    font-size: 18px;
   }
   .footer-middle {
     // border: 1px solid red;
@@ -275,5 +276,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .footer-logo {
+    min-width: 36vw;
+    max-width: 36vw;
+    min-height: 8vh;
+    max-height: 8vh;
+    margin-left: 5%;
   }
 }
