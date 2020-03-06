@@ -40,11 +40,11 @@ export default class Contact extends Component {
               founders, and others in the industry so you can learn from them.
             </h4>
           </div>
-          <h2 className="about-lua-paragraph">
+          <h2 className="who-runs-lua-paragraph">
             Who runs Lua?
             <br></br>
           </h2>
-          <div className="about-snippet-div">
+          <div className="who-runs-lua-div">
             <p>
               Lua was started by former bootcamp graduates. We saw firsthand how
               difficult the journey can be. From not knowing how to write a line

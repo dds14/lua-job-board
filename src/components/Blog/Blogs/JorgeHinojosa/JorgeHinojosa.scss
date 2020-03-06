@@ -1,6 +1,6 @@
-@import "../../../variables.scss";
+@import "../../../../../variables.scss";
 
-.entire-about-page {
+.entire-blog-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,41 +10,35 @@
   font-family: $main-font;
 }
 
-.about-lua-divider {
+.blog-divider {
   border: 0.2px solid lightgray;
   width: 100%;
 }
 
-.about-info-container {
+.blog-info-container {
   //   border: 5px solid blue;
   width: 60%;
+  margin-bottom: 10%;
 }
 
-.about-lua-header {
+.blog-header {
   font-size: 44px;
   margin-top: 72px;
   margin-bottom: 72px;
   font-weight: bold;
 }
 
-.about-lua-paragraph {
+.blog-paragraph {
   font-size: 28px;
   margin-top: 32px;
   line-height: 1.5;
   text-align: left;
 }
 
-.about-snippet-div {
+.blog-paragraph-div {
   font-size: 22px;
   text-align: left;
   line-height: 1.5;
-}
-
-.who-runs-lua-div {
-  font-size: 22px;
-  text-align: left;
-  line-height: 1.5;
-  margin-bottom: 15%;
 }
 
 .about-lua-mailto {
@@ -52,12 +46,7 @@
   color: $main;
 }
 
-.about-lua-resource-list {
-  font-weight: lighter;
-  font-size: 20px;
-}
-
-.who-runs-lua-paragraph {
+.blog-paragraph-header {
   font-size: 28px;
   margin-top: 52px;
   line-height: 1.5;
@@ -65,23 +54,23 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .entire-about-page {
+  .entire-blog-page {
     height: 60%;
     display: flex;
     flex-direction: column;
   }
-  .about-lua-header {
+  .blog-header {
     font-size: 42px;
     margin-top: 72px;
     margin-bottom: 52px;
   }
-  .about-lua-paragraph {
-    font-size: 22px;
+  .blog-paragraph-header {
+    font-size: 24px;
     line-height: 1.5;
     margin-top: 52px;
     margin-left: 5%;
   }
-  .about-snippet-div {
+  .blog-paragraph-div {
     // border: 5px solid red;
     font-size: 18px;
     margin-left: 5%;
@@ -91,18 +80,9 @@
     flex-direction: column;
     align-items: center;
     line-height: 1.5;
-    margin-bottom: 32px;
   }
-  .about-info-container {
-    //   border: 5px solid blue;
-    width: 70%;
-  }
-  .about-lua-resource-list {
-    font-weight: lighter;
-    font-size: 18px;
-  }
-
-  .who-runs-lua-div {
-    margin-bottom: 100px;
+  .blog-info-container {
+    // border: 5px solid blue;
+    width: 80%;
   }
 }

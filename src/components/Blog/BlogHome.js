@@ -33,13 +33,15 @@ export default class BlogHome extends Component {
                 to be a developer at Match.com!
               </h1>
             </div>
-            <a
-              href="/learn-more"
-              target="_blank"
-              className="blog-read-more-button"
-            >
-              Read More ➤
-            </a>
+            <Link to="/bootcamp-grad-landed-developer-job">
+              <a
+                href="/bootcamp-grad-landed-developer-job"
+                // target="_blank"
+                className="blog-read-more-button"
+              >
+                Read More ➤
+              </a>
+            </Link>
           </div>
           <div>
             {/* 🔥🔥🔥🔥🔥 BLOG TWO BEGINS */}
