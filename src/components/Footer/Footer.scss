@@ -11,8 +11,9 @@
   // border: 1px solid red;
   margin-top: 10%;
   font-family: $main-font;
-  //   background: #414a4c;
-  background: black;
+  // background: black;
+  // background: #414a4c;
+  background: $main;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -176,6 +177,16 @@
 
 .facebook-word {
   margin-left: 12%;
+}
+
+.instagram-a-href {
+  text-decoration: none;
+  color: white;
+}
+
+.twitter-a-href {
+  text-decoration: none;
+  color: white;
 }
 
 .facebook-a-href {

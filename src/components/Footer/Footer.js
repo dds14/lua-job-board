@@ -25,7 +25,11 @@ export default class Footer extends Component {
         {/* </div> */}
         <div className="footer-far-left">
           <h2 className="footer-far-left-header">
-            <img src={footer_logo} className="footer-logo" alt="lua-logo" />
+            <img
+              src={footer_logo}
+              className="footer-logo"
+              alt="lua-bootcamp-developer-jobs-logo"
+            />
           </h2>
           <div className="footer-far-left-content">
             <Link to="/job-board" className="footer-far-left-paragraph">
@@ -65,28 +69,61 @@ export default class Footer extends Component {
           <div className="footer-left-content">
             <div className="footer-social-icons">
               <div className="facebook-footer">
-                <img src={fb_icon} className="fb-logo" alt="facebook" />
+                <a
+                  href="https://www.facebook.com/luajobs/Facebook"
+                  target="_blank"
+                >
+                  <img src={fb_icon} className="fb-logo" alt="facebook" />
+                </a>
                 <p className="facebook-word">
                   <a
                     className="facebook-a-href"
                     href="https://www.facebook.com/luajobs/Facebook"
                     target="_blank"
+                    alt="lua-bootcamp-developer-jobs-facebook"
                   >
                     Facebook
                   </a>
                 </p>
               </div>
               <div className="insta-footer">
-                <img src={ig_icon} className="insta-logo" alt="facebook" />
-                <p className="insta-word">Instagram</p>
+                <a href="https://www.instagram.com/jobslua/" target="_blank">
+                  <img
+                    src={ig_icon}
+                    className="insta-logo"
+                    alt="facebook"
+                    target="_blank"
+                  />
+                </a>
+                <p className="insta-word">
+                  <a
+                    className="instagram-a-href"
+                    href="https://www.instagram.com/jobslua/"
+                    target="_blank"
+                    alt="lua-bootcamp-developer-jobs-instagram"
+                  >
+                    Instagram
+                  </a>
+                </p>
               </div>
               <div className="twitter-footer">
-                <img
-                  src={twitter_icon}
-                  className="twitter-logo"
-                  alt="twitter"
-                />
-                <p className="twitter-word">Twitter</p>
+                <a href="https://www.instagram.com/jobslua/" target="_blank">
+                  <img
+                    src={twitter_icon}
+                    className="twitter-logo"
+                    alt="twitter"
+                  />
+                </a>
+                <p className="twitter-word">
+                  <a
+                    className="twitter-a-href"
+                    href="https://twitter.com/jobslua"
+                    target="_blank"
+                    alt="lua-bootcamp-developer-jobs-twitter"
+                  >
+                    Twitter
+                  </a>
+                </p>
               </div>
             </div>
           </div>
