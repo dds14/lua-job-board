@@ -48,10 +48,13 @@ $font: "Quicksand", sans-serif;
   width: 25%;
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
-.nav-whats-lua-paragraph {
+.nav-about-lua-paragraph {
   margin-left: 5%;
+  text-decoration: none;
+  color: black;
 }
 
 // LOGO IMG
@@ -59,8 +62,8 @@ $font: "Quicksand", sans-serif;
   display: flex;
   flex-direction: row;
   margin-left: 30px;
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 90px;
   margin-bottom: 1%;
 }
 

@@ -24,7 +24,9 @@ export default class Navbar extends Component {
           <Link to="/">
             <img src={logo} className="nav-logo" alt="logo" />
           </Link>
-          <p className="nav-whats-lua-paragraph">What's Lua?</p>
+          <Link to="/about-lua" className="nav-about-lua-paragraph">
+            What's Lua?
+          </Link>
         </div>
         <div className="nav-right-side">
           <Link to="/" className="nav-home-text">

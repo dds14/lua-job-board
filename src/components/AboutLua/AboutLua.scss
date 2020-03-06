@@ -1,0 +1,77 @@
+@import "../../../variables.scss";
+
+.entire-about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   border: 5px solid red;
+  height: 80vh;
+  width: 100%;
+  font-family: $main-font;
+}
+
+.about-lua-divider {
+  border: 0.2px solid lightgray;
+  width: 100%;
+}
+
+.about-info-container {
+  //   border: 5px solid blue;
+  width: 60%;
+}
+
+.about-lua-header {
+  font-size: 44px;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  font-weight: bold;
+}
+
+.about-lua-paragraph {
+  font-size: 28px;
+  margin-top: 32px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.about-snippet-div {
+  font-size: 22px;
+  text-align: left;
+}
+
+.about-lua-mailto {
+  text-decoration: none;
+  color: $main;
+}
+
+@media only screen and (max-width: 800px) {
+  .entire-about-page {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-lua-header {
+    font-size: 42px;
+    margin-top: 72px;
+    margin-bottom: 52px;
+  }
+  .about-lua-paragraph {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 52px;
+  }
+  .about-snippet-div {
+    // border: 5px solid red;
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+  }
+  .about-info-container {
+    //   border: 5px solid blue;
+    width: 70%;
+  }
+}
