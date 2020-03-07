@@ -16,7 +16,11 @@ const MainJobBoard = () => {
     <MainJobBoardItem item={item} key={item.id} />
   ));
 
-  return <div>{jobs.length > 0 ? renderJobs : <h1> Loading...</h1>}</div>;
+  return (
+    <div>
+      {jobs.length > 0 ? renderJobs : <h1> Loading jobs, hang tight</h1>}
+    </div>
+  );
 };
 
 export default MainJobBoard;
