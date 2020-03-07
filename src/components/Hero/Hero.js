@@ -41,18 +41,12 @@ export default class Hero extends Component {
               Lua helps you land a job as a self-taught or bootcamp developer.
             </div>
             <div className="hero-buttons-div">
-              <a
-                href="/learn-more"
-                target="_blank"
-                className="hero-learn-more-button"
-              >
+              <Link to="/about-lua" className="hero-learn-more-button">
+                {/* <a href="/about-lua" className="hero-learn-more-button"> */}
                 Learn More
-              </a>
-              <a
-                href="/job-board"
-                target="_blank"
-                className="hero-view-jobs-button"
-              >
+                {/* </a> */}
+              </Link>
+              <a href="/job-board" className="hero-view-jobs-button">
                 See Our Jobs
               </a>
             </div>
