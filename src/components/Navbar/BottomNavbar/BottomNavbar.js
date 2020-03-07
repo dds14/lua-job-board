@@ -15,7 +15,13 @@ export default class BottomNavbar extends Component {
   render() {
     return (
       <div className="entire-bottom-navbar">
-        <h1>ello</h1>
+        <div className="bottom-navbar-container">
+          <div className="bottom-navbar-container-1"></div>
+          <div className="bottom-navbar-container-2"></div>
+          <div className="bottom-navbar-container-3"></div>
+          <div className="bottom-navbar-container-4"></div>
+          <div className="bottom-navbar-container-5"></div>
+        </div>
       </div>
     );
   }
