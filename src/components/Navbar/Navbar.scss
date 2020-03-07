@@ -31,6 +31,36 @@ $font: "Quicksand", sans-serif;
   }
 }
 
+.nav-home-text {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-job-board-text {
+  text-decoration: none;
+  color: black;
+}
+
+.newsletter-navbar-a-href {
+  text-decoration: none;
+  background-color: $main;
+  color: white;
+  margin-top: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 10px;
+  padding-left: 15px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.newsletter-navbar-a-href:hover {
+  opacity: $text-hover;
+}
+
 .navbar {
   // border: $border-test-red;
   background-color: $nav-background;
@@ -79,6 +109,10 @@ $font: "Quicksand", sans-serif;
 
 // MOBILE STUFF
 @media (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+
   .nav-right-side {
     display: none;
   }
@@ -92,36 +126,6 @@ $font: "Quicksand", sans-serif;
     left: 1.5%;
     top: 1.5%;
   }
-}
-
-.nav-home-text {
-  text-decoration: none;
-  color: black;
-}
-
-.nav-job-board-text {
-  text-decoration: none;
-  color: black;
-}
-
-.newsletter-navbar-a-href {
-  text-decoration: none;
-  background-color: $main;
-  color: white;
-  margin-top: 30px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 10px;
-  padding-left: 15px;
-  font-family: "Quicksand", sans-serif;
-  letter-spacing: 2px;
-  margin-bottom: 28px;
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.newsletter-navbar-a-href:hover {
-  opacity: $text-hover;
 }
 
 /// SPACE
@@ -192,80 +196,44 @@ $font: "Quicksand", sans-serif;
 //   outline: none;
 // }
 
-.nav-sign-up {
-  //   border: $border-test-blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 130px;
-  width: 45%;
-  border-radius: 45px;
-  background-color: $accent;
-  color: white;
-  font-size: 17px;
-  margin-top: 30px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 10px;
-  padding-left: 15px;
-  font-family: "Quicksand", sans-serif;
-  letter-spacing: 2px;
-  margin-bottom: 28px;
-  opacity: 1;
-  transition: 0.3s;
-  text-decoration: none;
-}
+// COMMENTED OUT STARTING HERE
 
-.nav-sign-up:hover {
-  //   background-color: #afeeee;
-  opacity: 0.5;
-  color: black;
-}
-
-.nav-sign-up:focus {
-  outline: none;
-}
-
-.sign-up-span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-// .nav-profile {
+// .nav-sign-up {
+//   //   border: $border-test-blue;
 //   display: flex;
-//   justify-content: flex-end;
-//   margin-right: 50px;
+//   justify-content: center;
+//   align-items: center;
+//   margin-right: 130px;
+//   width: 45%;
+//   border-radius: 45px;
+//   background-color: $accent;
+//   color: white;
+//   font-size: 17px;
+//   margin-top: 30px;
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   padding-right: 10px;
+//   padding-left: 15px;
 //   font-family: "Quicksand", sans-serif;
-//   font-size: $nav-font-size;
+//   letter-spacing: 2px;
+//   margin-bottom: 28px;
+//   opacity: 1;
+//   transition: 0.3s;
 //   text-decoration: none;
-//   position: absolute;
-//   right: 14%;
 // }
 
-// .nav-profile:hover {
-//   opacity: $text-hover;
+// .nav-sign-up:hover {
+//   //   background-color: #afeeee;
+//   opacity: 0.5;
+//   color: black;
 // }
 
-// .nav-profile:focus {
+// .nav-sign-up:focus {
 //   outline: none;
 // }
 
-// .nav-logout {
+// .sign-up-span {
 //   display: flex;
-//   justify-content: flex-end;
-//   margin-right: 50px;
-//   font-family: "Quicksand", sans-serif;
-//   font-size: $nav-font-size;
-//   text-decoration: none;
-//   position: absolute;
-//   right: 5%;
-// }
-
-// .nav-logout:hover {
-//   opacity: $text-hover;
-// }
-
-// .nav-logout:focus {
-//   outline: none;
+//   align-items: center;
+//   justify-content: center;
 // }

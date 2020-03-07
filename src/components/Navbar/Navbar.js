@@ -9,16 +9,28 @@ export default class Navbar extends Component {
   constructor() {
     super();
     this.state = {
-      readytouse: null
+      readytouse: null,
+      menuStatus: "closed"
     };
   }
+
+  menuToggle = () => {
+    if (this.state.menuStatus === "open") {
+      this.setState({ menuStatus: "closed" });
+    } else {
+      this.setState({ menuStatus: "open" });
+    }
+    console.log(this.state.menuStatus);
+  };
 
   render() {
     return (
       <div className="navbar">
         <div className="hamburger">
           <img src={logo} className="hammy-logo" alt="logo" />
-          <img src={hamburgermobile} className="hammy" alt="hamburger" />
+          <button onClick={() => this.menuToggle()} id="hamburger-btn">
+            <img src={hamburgermobile} className="hammy" alt="hamburger" />
+          </button>
         </div>
         <div className="nav-left-side">
           <Link to="/">
