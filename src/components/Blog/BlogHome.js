@@ -12,8 +12,8 @@ export default class BlogHome extends Component {
             "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80",
           blogTitle: "How Jorge Became A Full-Time Developer In A Year",
           blogSnippet:
-            "How this developer landed a job at Match.com after coding bootcamp",
-          blogLink: "google.com"
+            " After learning on his own for years, Jorge took the leap and went to a coding bootcamp in Dallas. Within a year, he got an offer to be a developer at Match.com!",
+          blogLink: "/bootcamp-grad-landed-developer-job"
         },
         {
           blogImage:
@@ -22,8 +22,7 @@ export default class BlogHome extends Component {
             "Our Chat With Jason Field: Founder and CEO of BrainStation",
           blogSnippet:
             "After traveling through Asia and working with Lululemon in Australia and New Zealand, Jason founded one of the top digital schools in the world: BrainStation.",
-          // "hello",
-          blogLink: "google.com"
+          blogLink: "bootcamp-grad-landed-developer-job"
         }
       ]
     };
