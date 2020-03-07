@@ -46,9 +46,9 @@ export default class Hero extends Component {
                 Learn More
                 {/* </a> */}
               </Link>
-              <a href="/job-board" className="hero-view-jobs-button">
+              <Link to="/job-board" className="hero-view-jobs-button">
                 See Our Jobs
-              </a>
+              </Link>
             </div>
           </div>
         </div>
