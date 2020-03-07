@@ -15,19 +15,61 @@ export default class BottomNavbar extends Component {
     return (
       <div className="entire-bottom-navbar">
         <div className="bottom-navbar-container">
-          <div className="bottom-navbar-container-1">
-            <img
-              src={BottomNavbarHomeLogo}
-              className="BottomNavbarHomeLogo"
-            ></img>
-            <div className="BottomNavbarHomeTextDiv">
-              <div className="BottomNavbarHomeText">Home</div>
+          <Link to="/">
+            <div className="bottom-navbar-container-1">
+              <img
+                src={BottomNavbarHomeLogo}
+                className="BottomNavbarHomeLogo"
+              ></img>
+              <div className="BottomNavbarHomeTextDiv">
+                <div className="BottomNavbarHomeText">Home</div>
+              </div>
             </div>
-          </div>
-          <div className="bottom-navbar-container-2"></div>
-          <div className="bottom-navbar-container-3"></div>
-          <div className="bottom-navbar-container-4"></div>
-          <div className="bottom-navbar-container-5"></div>
+          </Link>
+          <Link to="/job-board">
+            <div className="bottom-navbar-container-1">
+              <img
+                src={BottomNavbarHomeLogo}
+                className="BottomNavbarHomeLogo"
+              ></img>
+              <div className="BottomNavbarHomeTextDiv">
+                <div className="BottomNavbarHomeText">Jobs</div>
+              </div>
+            </div>
+          </Link>
+          <Link to="/blog">
+            <div className="bottom-navbar-container-1">
+              <img
+                src={BottomNavbarHomeLogo}
+                className="BottomNavbarHomeLogo"
+              ></img>
+              <div className="BottomNavbarHomeTextDiv">
+                <div className="BottomNavbarHomeText">Blog</div>
+              </div>
+            </div>
+          </Link>
+          <Link to="/about-lua">
+            <div className="bottom-navbar-container-1">
+              <img
+                src={BottomNavbarHomeLogo}
+                className="BottomNavbarHomeLogo"
+              ></img>
+              <div className="BottomNavbarHomeTextDiv">
+                <div className="BottomNavbarHomeText">About</div>
+              </div>
+            </div>
+          </Link>
+          <Link to="/contact">
+            <div className="bottom-navbar-container-1">
+              <img
+                src={BottomNavbarHomeLogo}
+                className="BottomNavbarHomeLogo"
+              ></img>
+              <div className="BottomNavbarHomeTextDiv">
+                <div className="BottomNavbarHomeText">Contact</div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     );
