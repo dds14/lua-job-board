@@ -1,151 +1,355 @@
 @import "../../../variables.scss";
-
-.entire-blog-div {
-  border: 3px solid $main;
-  background-color: #fefdfede;
-  z-index: -1;
-  padding-top: 2%;
-  padding-bottom: 15%;
+.display-influencers {
   font-family: $font;
-  //   height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.smaller-blog-div {
-  border: 3px solid orange;
-  width: 70vw;
+.whole-div {
+  border: 1px solid green;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  // flex-direction: row;
+  width: 90%;
+  margin: auto;
   justify-content: space-around;
+  padding-top: 45px;
 }
 
-.entire-blog-title {
-  font-size: 48px;
-  font-weight: bold;
+.overall-account-display {
+  border: 1px solid red;
+  padding: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.entire-blog-tagline {
+.home-influencers-title {
+  font-size: 45px;
+  margin-top: 55px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.home-account-name {
+  // border: 1px solid red;
+  padding-bottom: 25px;
   font-size: 32px;
-  font-weight: lighter;
-  margin-bottom: 15%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.blog-frame {
-  border: 1px solid $main;
-  padding-top: 3%;
-  border-radius: 2%;
-  background-color: white;
-  width: 25%;
-  min-width: 25%;
-  height: 100%;
-  min-height: 85vh;
-  -moz-box-shadow: 0px 3px 8px rgb(187, 187, 187);
-  -webkit-box-shadow: 0px 3px 8px rgb(187, 187, 187);
-  box-shadow: 0px 3px 8px rgb(187, 187, 187);
-}
-
-.blog-image {
+.home-profile-picture {
+  min-height: 50vh;
+  max-height: 50vh;
   min-width: 25vw;
   max-width: 25vw;
-  min-height: 35vh;
-  max-height: 35vh;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 2%;
 }
 
-.blog-post-title {
-  font-size: 36px;
-  margin-bottom: 5%;
+@media only screen and (max-width: 900px) {
+  .home-influencers-title {
+    font-size: 40px;
+  }
+
+  .image-div {
+    // border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-profile-picture {
+    // border: 3px solid salmon;
+    min-width: 80vw;
+    max-width: 80vw;
+    min-height: 70vh;
+    max-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .whole-div {
+    // border: 2px solid wheat;
+    width: 90%;
+    height: 100%;
+    padding-top: 45px;
+  }
+
+  .overall-account-display {
+    // border: 1px solid greenyellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
 }
 
-.blog-post-snippet {
-  font-size: 16px;
+.home-account-atname {
+  font-size: 17px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-// fix up the image CSS once there's multiple to look at
-.blog-image-div {
-  height: 100%;
-  width: 100%;
-  margin-bottom: -1%;
+.home-follower-count {
+  font-size: 17px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-// .blog-image {
-//   border-top-left-radius: 2%;
-//   border-top-right-radius: 2%;
-//   min-width: 500px;
-//   max-width: 500px;
-//   min-height: 450px;
-//   max-height: 450px;
-// }
-
-.blog-post-title-div {
-  background-color: white;
-  margin-top: 4%;
-  padding-left: 6%;
-  padding-right: 6%;
+.home-average-likes {
+  font-size: 17px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.blog-post-snippet-div {
-  background-color: white;
-  padding-left: 2%;
-  padding-right: 2%;
-  font-size: 8px;
-  margin-bottom: 4%;
+.home-price {
+  font-size: 17px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.blog-post-snippet {
-  font-weight: lighter;
-  line-height: 1.5;
-}
-
-.blog-read-more-button {
-  min-width: 22%;
-  text-decoration: none;
-  background-color: $main;
-  font-size: 16px;
+.post-price {
+  font-size: 18px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-weight: bold;
-  color: white;
-  border-radius: 3%;
-  margin-top: 28px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 18px;
-  padding-left: 18px;
+  border-bottom: 1.5px solid $accent;
+  padding-bottom: 8%;
+}
+
+.home-contact-influencer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 30%;
+  border-radius: 45px;
+  background-color: $accent;
+  color: black;
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  padding-left: 35px;
   font-family: "Quicksand", sans-serif;
   letter-spacing: 2px;
   margin-bottom: 28px;
+  margin-top: 32px;
   opacity: 1;
   transition: 0.3s;
 }
 
-.blog-frame-seperator {
-  margin-top: 120px;
+.home-contact-influencer-button {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 45px;
+  background-color: $accent;
+  color: black;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
-@media (max-width: 1200px) {
-  .blog-frame {
-    // border: 3px solid orange;
-    width: 70%;
-    // height: 50%;
+.ello {
+  display: flex;
+  justify-content: center;
+}
+
+.home-contact-influencer:hover {
+  opacity: 0.5;
+  color: black;
+}
+
+.home-contact-influencer:focus {
+  outline: none;
+}
+
+// MOBILE WAS WORKING GREAT IMMEDIATELY AFTER BRINGING IN DISPLAYINFLUENCERS
+// SO ALL NEW CSS IS WRAPPED IN A DESKTOP MEDIA QUERY
+@media only screen and (min-width: 900px) {
+  .home-follower-count {
+    max-width: 100%;
   }
-  .blog-image {
-    min-width: 45vw;
-    // max-width: 70vw;
-    min-height: 40vh;
-    // max-height: 250px;
+  .overall-account-display {
+    max-width: 40%;
   }
-  .blog-post-title {
-    font-size: 24px;
-    margin-bottom: 10%;
-  }
-  .blog-post-snippet {
-    font-size: 16px;
-  }
-  .smaller-blog-div {
-    border: 3px solid orange;
+  .image-div {
+    // border: 5px solid red;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 }
+
+// CSS BEFORE SWITCHING TO NANO'S DISPLAYINFLUENCERS CODE
+// .entire-blog-div {
+//   border: 3px solid $main;
+//   background-color: #fefdfede;
+//   z-index: -1;
+//   padding-top: 2%;
+//   padding-bottom: 15%;
+//   font-family: $font;
+//   //   height: 100vh;
+//   width: 100vw;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .smaller-blog-div {
+//   border: 3px solid orange;
+//   width: 70vw;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+// }
+
+// .entire-blog-title {
+//   font-size: 48px;
+//   font-weight: bold;
+// }
+
+// .entire-blog-tagline {
+//   font-size: 32px;
+//   font-weight: lighter;
+//   margin-bottom: 15%;
+// }
+
+// .blog-frame {
+//   border: 1px solid $main;
+//   padding-top: 3%;
+//   padding-bottom: 72px;
+//   border-radius: 2%;
+//   background-color: white;
+//   width: 40%;
+//   // min-width: 25%;
+//   height: 100%;
+//   min-height: 85vh;
+//   -moz-box-shadow: 0px 3px 8px rgb(187, 187, 187);
+//   -webkit-box-shadow: 0px 3px 8px rgb(187, 187, 187);
+//   box-shadow: 0px 3px 8px rgb(187, 187, 187);
+// }
+
+// .blog-image {
+//   min-width: 45vw;
+//   max-width: 45vw;
+//   min-height: 40vh;
+//   max-height: 40vh;
+// }
+
+// .blog-post-title {
+//   font-size: 36px;
+//   margin-bottom: 5%;
+// }
+
+// .blog-post-snippet {
+//   font-size: 16px;
+// }
+
+// // fix up the image CSS once there's multiple to look at
+// .blog-image-div {
+//   overflow: hidden;
+// }
+
+// // .blog-image {
+// //   border-top-left-radius: 2%;
+// //   border-top-right-radius: 2%;
+// //   min-width: 500px;
+// //   max-width: 500px;
+// //   min-height: 450px;
+// //   max-height: 450px;
+// // }
+
+// .blog-post-title-div {
+//   background-color: white;
+//   margin-top: 4%;
+//   padding-left: 6%;
+//   padding-right: 6%;
+// }
+
+// .blog-post-snippet-div {
+//   background-color: white;
+//   padding-left: 2%;
+//   padding-right: 2%;
+//   font-size: 8px;
+//   margin-bottom: 8%;
+// }
+
+// .blog-post-snippet {
+//   font-weight: lighter;
+//   line-height: 1.5;
+// }
+
+// .blog-read-more-button {
+//   min-width: 22%;
+//   text-decoration: none;
+//   background-color: $main;
+//   font-size: 16px;
+//   font-weight: bold;
+//   color: white;
+//   border-radius: 3%;
+//   margin-top: 28px;
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+//   padding-right: 18px;
+//   padding-left: 18px;
+//   font-family: "Quicksand", sans-serif;
+//   letter-spacing: 2px;
+//   margin-bottom: 28px;
+//   opacity: 1;
+//   transition: 0.3s;
+// }
+
+// .blog-frame-seperator {
+//   margin-top: 120px;
+// }
+
+// @media (max-width: 1200px) {
+//   .blog-frame {
+//     // border: 3px solid orange;
+//     width: 100%;
+//     padding-bottom: 72px;
+//   }
+//   .blog-image {
+//     min-width: 45vw;
+//     // max-width: 70vw;
+//     min-height: 40vh;
+//     // max-height: 250px;
+//   }
+//   .blog-post-title {
+//     font-size: 24px;
+//     margin-bottom: 10%;
+//   }
+//   .blog-post-snippet {
+//     font-size: 16px;
+//   }
+//   .blog-post-snippet-div {
+//     font-size: 16px;
+//     margin-bottom: 20%;
+//   }
+//   .smaller-blog-div {
+//     border: 3px solid orange;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }
