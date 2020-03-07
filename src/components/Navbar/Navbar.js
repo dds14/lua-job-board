@@ -14,15 +14,6 @@ export default class Navbar extends Component {
     };
   }
 
-  menuToggle = () => {
-    if (this.state.menuStatus === "open") {
-      this.setState({ menuStatus: "closed" });
-    } else {
-      this.setState({ menuStatus: "open" });
-    }
-    console.log(this.state.menuStatus);
-  };
-
   render() {
     return (
       <div className="navbar">

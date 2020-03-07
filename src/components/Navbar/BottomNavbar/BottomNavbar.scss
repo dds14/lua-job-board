@@ -1,12 +1,15 @@
 @import "../../../../variables.scss";
 
 .entire-bottom-navbar {
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 14px;
   z-index: 5;
-  border: 3px solid blue;
+  border: 2px solid #b8b8b8;
   background-color: white;
   width: 100%;
-  min-height: 90px;
-  max-height: 90px;
+  min-height: 70px;
+  max-height: 70px;
   position: fixed;
   bottom: 0;
   display: flex;
@@ -17,35 +20,85 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-right: 2px;
 }
 
+// ALL THE TEXT + FUNCTIONAL CSS FOR THE STARTS HERE
 .bottom-navbar-container-1 {
-  border: 1px solid red;
-  width: 81px;
+  border-right: 1px solid #e8e8e8;
+  width: 72px;
+  padding-top: 2px;
+}
+
+.bottom-navbar-container-1-home {
+  color: $main;
+  border-right: 1px solid #e8e8e8;
+  width: 72px;
   padding-top: 10px;
 }
 
-.BottomNavbarHomeLogo {
-  min-width: 50px;
-  max-width: 50px;
-  min-height: 40px;
-  max-height: 40px;
-  padding-bottom: 3px;
-  fill: $main;
-  //   fill: white;
+.bottom-navbar-links {
+  text-decoration: none;
+  color: black;
 }
 
-// .BottomNavbarContactIcon {
-//   min-width: 50px;
-//   max-width: 50px;
-//   min-height: 40px;
-//   max-height: 40px;
-//   padding-bottom: 3px;
-//   fill: $main;
-// }
+// ALL THE ICONS + FUNCTIONAL CSS FOR THEM STARTS HERE
+.BottomNavbarIcon- {
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 44px;
+  max-height: 44px;
+  padding-bottom: 3px;
+  fill: #404040;
+}
+
+.BottomNavbarIcon-home {
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 44px;
+  max-height: 44px;
+  padding-bottom: 3px;
+  fill: $main;
+}
+
+.BottomNavbarIcon-job-board {
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 44px;
+  max-height: 44px;
+  padding-bottom: 3px;
+  fill: $main;
+}
+
+.BottomNavbarIcon-blog {
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 44px;
+  max-height: 44px;
+  padding-bottom: 3px;
+  fill: $main;
+}
+
+.BottomNavbarIcon-about {
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 44px;
+  max-height: 44px;
+  padding-bottom: 3px;
+  fill: $main;
+}
+
+.BottomNavbarIcon-contact {
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 44px;
+  max-height: 44px;
+  padding-bottom: 3px;
+  fill: $main;
+}
 
 .BottomNavbarHomeTextDiv {
-  border: 2px solid blue;
+  //   border: 2px solid blue;
   display: flex;
   justify-content: center;
   align-items: flex-start;
