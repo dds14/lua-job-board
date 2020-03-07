@@ -30,6 +30,10 @@ const { getJobs } = require("./controllers/jobBoardController");
 // Retrieve jobs from database
 app.get("/getjobs", getJobs);
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build/index.html"));
+});
+
 app.listen(SERVER_PORT, () => {
   console.log(`Server listening on ${SERVER_PORT}`);
 });
