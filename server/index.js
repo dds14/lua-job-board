@@ -9,7 +9,11 @@ const path = require("path"); // Usually moved to the start of file
 
 const app = express();
 
-app.use(express.json());
+const PORT = process.env.PORT || 3000;
+
+app.use(express.static(path.join(__dirname, "build")));
+
+// app.use(express.json());
 
 // app.use((req, res, next) => {
 //   res.header("Access-Control-Allow-Origin", "*");
@@ -30,8 +34,8 @@ const { getJobs } = require("./controllers/jobBoardController");
 // Retrieve jobs from database
 app.get("/getjobs", getJobs);
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../build/index.html"));
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 app.listen(SERVER_PORT, () => {
