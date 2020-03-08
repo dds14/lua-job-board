@@ -86,7 +86,8 @@
 // DESKTOP STYLE
 @media (min-width: 1200px) {
   .entire-hero-div {
-    // border: 5px solid blueviolet;
+    border-bottom: 2px solid blueviolet;
+    margin-top: 6%;
     display: flex;
   }
   .hero-left-side-div {
