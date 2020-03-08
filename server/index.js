@@ -1,6 +1,9 @@
 require("dotenv").config();
 const massive = require("massive");
 const express = require("express");
+equire("dotenv").config();
+const massive = require("massive");
+const express = require("express");
 const session = require("express-session");
 const request = require("request");
 const { SERVER_PORT } = process.env;
@@ -11,8 +14,7 @@ const app = express();
 
 // const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, "build")));
-
+app.use(express.static(`${__dirname}/../build`));
 // app.use(express.json());
 
 // app.use((req, res, next) => {
@@ -43,4 +45,3 @@ app.listen(SERVER_PORT, () => {
 });
 
 // app.listen(PORT, () => console.log(`> Ready on http://localhost:${PORT}`));
-const path = require("path"); // Usually moved to the start of file
