@@ -116,7 +116,7 @@
     justify-content: flex-end;
   }
   .become-a-developer-div {
-    border: 1px solid red;
+    // border: 1px solid red;
     font-size: 36px;
     font-weight: bold;
     display: flex;
@@ -146,10 +146,10 @@
     display: none;
   }
   .entire-hero-div {
-    // border: 5px solid blueviolet;
+    border: 5px solid blueviolet;
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
+    justify-content: center;
   }
   .hero-left-side-div {
     // border: 3px solid red;
@@ -166,7 +166,7 @@
   .become-a-entire-div {
     // border: 3px solid orange;
     width: 100vw;
-    height: 20%;
+    height: 65%;
     margin-top: 70px;
     padding-right: 0px;
     display: flex;
