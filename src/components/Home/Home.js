@@ -10,7 +10,7 @@ export default class Home extends Component {
     return (
       <div className="home">
         {/* <Navbar /> */}
-        <Hero />
+	<Hero />
         <MainJobBoard />
         <Footer />
       </div>
