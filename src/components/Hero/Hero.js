@@ -26,6 +26,8 @@ export default class Hero extends Component {
 
   componentDidUnmount() {
     clearInterval(this.timeout);
+
+    // window.scrollTo(0, 0);
   }
 
   render() {
@@ -36,7 +38,9 @@ export default class Hero extends Component {
         <div className="hero-left-side-div">
           <div className="left-empty-space-desktop"></div>
           <div className="become-a-entire-div">
-            <div className="become-a-developer-div">Becomeeeeeeeee A Developer</div>
+            <div className="become-a-developer-div">
+              Becomeeeeeeeee A Developer
+            </div>
             <div className="tagline-div">
               Lua helps you land a job as a self-taught or bootcamp developer.
             </div>

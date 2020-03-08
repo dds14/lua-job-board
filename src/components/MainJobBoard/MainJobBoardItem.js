@@ -32,9 +32,11 @@ const MainJobBoardItem = ({ item }) => {
             </form>
           </div>
         </div>
-        {itemOpen && 
-          <div><h1>{item.job_description}</h1></div>
-        }
+        {itemOpen && (
+          <div>
+            <h1>{item.job_description}</h1>
+          </div>
+        )}
       </div>
     </React.Fragment>
   );

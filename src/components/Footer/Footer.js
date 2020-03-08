@@ -32,6 +32,10 @@ export default class Footer extends Component {
             />
           </h2>
           <div className="footer-far-left-content">
+            <Link to="/" className="footer-far-left-paragraph">
+              Home
+            </Link>
+            <br />
             <Link to="/job-board" className="footer-far-left-paragraph">
               Job Board
             </Link>

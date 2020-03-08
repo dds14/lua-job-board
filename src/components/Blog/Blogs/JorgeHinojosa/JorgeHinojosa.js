@@ -9,6 +9,10 @@ export default class JorgeHinojosa extends Component {
     this.state = { readytouse: null };
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="entire-blog-page">
