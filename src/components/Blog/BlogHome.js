@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 import "./BlogHome.scss";
 
 export default class BlogHome extends Component {
@@ -14,16 +15,16 @@ export default class BlogHome extends Component {
           blogSnippet:
             " After learning on his own for years, Jorge took the leap and went to a coding bootcamp in Dallas. Within a year, he got an offer to be a developer at Match.com!",
           blogLink: "/bootcamp-grad-landed-developer-job"
-        },
-        {
-          blogImage:
-            "https://i.pinimg.com/originals/46/c2/d8/46c2d88c5478915b3f61406b8166d5f4.jpg",
-          blogTitle:
-            "Our Chat With Jason Field: Founder and CEO of BrainStation",
-          blogSnippet:
-            "After traveling through Asia and working with Lululemon in Australia and New Zealand, Jason founded one of the top digital schools in the world: BrainStation.",
-          blogLink: "bootcamp-grad-landed-developer-job"
         }
+        // {
+        //   blogImage:
+        //     "https://i.pinimg.com/originals/46/c2/d8/46c2d88c5478915b3f61406b8166d5f4.jpg",
+        //   blogTitle:
+        //     "Our Chat With Jason Field: Founder and CEO of BrainStation",
+        //   blogSnippet:
+        //     "After traveling through Asia and working with Lululemon in Australia and New Zealand, Jason founded one of the top digital schools in the world: BrainStation.",
+        //   blogLink: "bootcamp-grad-landed-developer-job"
+        // }
       ]
     };
   }
@@ -73,6 +74,7 @@ export default class BlogHome extends Component {
             );
           })}
         </div>
+        <Footer />
       </div>
     );
   }

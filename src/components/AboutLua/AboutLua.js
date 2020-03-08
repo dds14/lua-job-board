@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 import "./AboutLua.scss";
 
 export default class Contact extends Component {
@@ -54,6 +55,7 @@ export default class Contact extends Component {
             <p></p>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

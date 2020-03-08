@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <header>{routes}</header>
         <BottomNavbar />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </HashRouter>
   );

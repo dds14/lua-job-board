@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./MainJobBoard.scss";
 import MainJobBoardItem from "./MainJobBoardItem";
+import Footer from "../Footer/Footer";
 
 const MainJobBoard = () => {
   const [jobs, setJobs] = useState([]);
