@@ -84,7 +84,7 @@
 }
 
 // DESKTOP STYLE
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .entire-hero-div {
     // border: 5px solid blueviolet;
     display: flex;
@@ -92,6 +92,7 @@
   .hero-left-side-div {
     // border: 3px solid red;
     display: flex;
+    margin-right: 5%;
     width: 60%;
     justify-content: center;
   }
@@ -115,9 +116,11 @@
     justify-content: flex-end;
   }
   .become-a-developer-div {
+    border: 1px solid red;
     font-size: 36px;
     font-weight: bold;
     display: flex;
+    width: 120%;
     justify-content: flex-start;
   }
   .tagline-div {
@@ -138,7 +141,7 @@
 }
 
 // MOBILE STYLE
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .hero-image {
     display: none;
   }
@@ -146,7 +149,7 @@
     // border: 5px solid blueviolet;
     display: flex;
     flex-direction: column;
-    // margin-top: 250px;
+    margin-top: 250px;
   }
   .hero-left-side-div {
     // border: 3px solid red;
@@ -174,6 +177,7 @@
     font-size: 36px;
     font-weight: bold;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .tagline-div {
@@ -270,9 +274,9 @@
 //   margin-right: 1%;
 // }
 
-// .text-that-changes {
-//   color: $main;
-// }
+.text-that-changes {
+  color: $main;
+}
 
 // @media (max-width: 1200px) {
 //   .hero-left-side-div {

@@ -43,7 +43,7 @@ export default class Hero extends Component {
               <span className="text-that-changes">{textThatChanges}</span>
             </div>
             <div className="tagline-div">
-              Lua helps you land a job as a self-taught or bootcamp developer.
+              Lua helps you land a job in tech without a CS degree.
             </div>
             <div className="hero-buttons-div">
               <Link to="/about-lua" className="hero-learn-more-button">
