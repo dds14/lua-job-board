@@ -53,13 +53,19 @@ export default class BlogHome extends Component {
                 <div className="ello">
                   <div className="home-contact-influencer">
                     {/* <button className="home-contact-influencer-button"> */}
-                    <a
-                      href="/learn-more"
-                      // target="_blank"
+                    <Link
+                      to="/bootcamp-grad-landed-developer-job"
                       className="blog-read-more-button"
                     >
                       Read More ➤
-                    </a>
+                    </Link>
+                    {/* <a */}
+                    {/* //   href="/bootcamp-grad-landed-developer-job"
+                    //   // target="_blank"
+                    //   className="blog-read-more-button"
+                    // >
+                      Read More ➤ */}
+                    {/* // </a> */}
                     {/* </button> */}
                   </div>
                 </div>
