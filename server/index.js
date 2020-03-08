@@ -38,6 +38,8 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-app.listen(SERVER_PORT, () => {
-  console.log(`Server listening on ${SERVER_PORT}`);
-});
+// app.listen(SERVER_PORT, () => {
+//   console.log(`Server listening on ${SERVER_PORT}`);
+// });
+
+app.listen(PORT, () => console.log(`> Ready on http://localhost:${PORT}`));
