@@ -17,6 +17,7 @@ $font: "Quicksand", sans-serif;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 11;
 }
 
 // HAMBURGER
@@ -69,7 +70,8 @@ $font: "Quicksand", sans-serif;
   height: 12vh;
   display: flex;
   align-items: center;
-  box-shadow: 1px 4px 5px #efefef;
+  // box-shadow: 1px 4px 5px #efefef;
+  box-shadow: 1px 2px 3px #efefef;
 }
 
 .nav-left-side {
