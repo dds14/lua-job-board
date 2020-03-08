@@ -7,9 +7,9 @@ const MainJobBoardItem = ({ item }) => {
 
   return (
     <React.Fragment>
-      <div className="all-jobs" onClick={handleDropdown}>
+      <div className="all-jobs">
         {/* <h1>{item.id}</h1> */}
-        <div className="pre-dropdown-container">
+        <div className="pre-dropdown-container" onClick={handleDropdown}>
           <div className="company-logo-div">
             <img className="company-logo" src={item.company_logo}></img>
           </div>
@@ -32,7 +32,9 @@ const MainJobBoardItem = ({ item }) => {
             </form>
           </div>
         </div>
-        {itemOpen && <h1>{item.job_description}</h1>}
+        {itemOpen && 
+          <div><h1>{item.job_description}</h1></div>
+        }
       </div>
     </React.Fragment>
   );
