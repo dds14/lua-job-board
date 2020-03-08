@@ -39,7 +39,7 @@ export default class Hero extends Component {
           <div className="left-empty-space-desktop"></div>
           <div className="become-a-entire-div">
             <div className="become-a-developer-div">
-              Become A &nbsp;
+              Become A&nbsp;
               <span className="text-that-changes">{textThatChanges}</span>
             </div>
             <div className="tagline-div">

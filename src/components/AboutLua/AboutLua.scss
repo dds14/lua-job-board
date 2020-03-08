@@ -63,6 +63,12 @@
   text-align: left;
 }
 
+@media only screen and (min-width: 1000px) {
+  .entire-about-page {
+    margin-top: 5%;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .entire-about-page {
     height: 60%;

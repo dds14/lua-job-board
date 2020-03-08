@@ -40,4 +40,3 @@
   "main": "server/index.js",
   "proxy": "http://localhost:4090"
 }
-

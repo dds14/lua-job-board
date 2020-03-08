@@ -14,18 +14,18 @@ $font: "Quicksand", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 // HAMBURGER
 .hamburger {
   // border: 1px solid plum;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 25px;
-  width: 100%;
+  display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .hamburger {
     display: none;
   }
@@ -75,7 +75,7 @@ $font: "Quicksand", sans-serif;
 .nav-left-side {
   //   border: 1px solid green;
   align-items: center;
-  width: 25%;
+  width: 35%;
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -98,17 +98,17 @@ $font: "Quicksand", sans-serif;
 }
 
 .nav-right-side {
-  //   border: 1px solid red;
+  // border: 1px solid red;
   height: 90%;
   text-decoration: none;
-  width: 40%;
+  width: 48%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 // MOBILE STUFF
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
   .navbar {
     display: none;
   }
@@ -120,11 +120,7 @@ $font: "Quicksand", sans-serif;
     display: none;
   }
   .hammy-logo {
-    height: 10vh;
-    min-width: 22vw;
-    position: absolute;
-    left: 1.5%;
-    top: 1.5%;
+    display: none;
   }
 }
 
