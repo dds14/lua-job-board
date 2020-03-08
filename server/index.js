@@ -9,7 +9,7 @@ const path = require("path"); // Usually moved to the start of file
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "build")));
 
@@ -34,12 +34,13 @@ const { getJobs } = require("./controllers/jobBoardController");
 // Retrieve jobs from database
 app.get("/getjobs", getJobs);
 
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build/index.html"));
 });
 
-// app.listen(SERVER_PORT, () => {
-//   console.log(`Server listening on ${SERVER_PORT}`);
-// });
+app.listen(SERVER_PORT, () => {
+  console.log(`Server listening on ${SERVER_PORT}`);
+});
 
-app.listen(PORT, () => console.log(`> Ready on http://localhost:${PORT}`));
+// app.listen(PORT, () => console.log(`> Ready on http://localhost:${PORT}`));
+const path = require("path"); // Usually moved to the start of file
