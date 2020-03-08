@@ -38,7 +38,10 @@ export default class Hero extends Component {
         <div className="hero-left-side-div">
           <div className="left-empty-space-desktop"></div>
           <div className="become-a-entire-div">
-            <div className="become-a-developer-div">Break Into Tech</div>
+            <div className="become-a-developer-div">
+              Become A &nbsp;
+              <span className="text-that-changes">{textThatChanges}</span>
+            </div>
             <div className="tagline-div">
               Lua helps you land a job as a self-taught or bootcamp developer.
             </div>
