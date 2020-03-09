@@ -16,7 +16,20 @@
     font-size: 24px;
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 72px;
+    margin-bottom: 28px;
+  }
+  .job-board-coming-soon {
+    font-size: 20px;
+    font-weight: lighter;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 52px;
+    line-height: 1.5;
+  }
+  .job-board-coming-soon-signup {
+    text-decoration: none;
+    color: $main;
+    font-weight: bold;
   }
 }
 
@@ -32,6 +45,19 @@
     font-size: 20px;
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 28px;
+  }
+  .job-board-coming-soon {
+    font-size: 16px;
+    font-weight: lighter;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-bottom: 52px;
+    line-height: 1.5;
+  }
+  .job-board-coming-soon-signup {
+    text-decoration: none;
+    color: $main;
+    font-weight: bold;
   }
 }
