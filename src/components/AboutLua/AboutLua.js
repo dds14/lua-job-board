@@ -56,7 +56,7 @@ export default class Contact extends Component {
             </h4>
             <h4 className="about-lua-resource-list">
               📚 A blog, where we interview successful developers, bootcamp
-              founders, and others in the industry so you can learn from them.{" "}
+              founders, and others in the industry so you can learn from them{" "}
               <a
                 href="https://luatech.io/blog"
                 target="_blank"
