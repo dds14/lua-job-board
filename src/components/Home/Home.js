@@ -14,7 +14,7 @@ export default class Home extends Component {
       <div className="home">
         {/* <Navbar /> */}
         <Hero />
-        <MainJobBoard />
+        {/* <MainJobBoard /> */}
         <Footer />
       </div>
     );

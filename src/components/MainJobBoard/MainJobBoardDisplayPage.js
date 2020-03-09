@@ -21,9 +21,10 @@ export default class MainJobBoardDisplayPage extends Component {
       <div className="entire-job-board-display-page">
         <h1 className="job-board-title">Job Board</h1>
         <h2 className="job-board-tagline">
-          None of these Jobs require a CS degree
+          🔥 None Of These Jobs Require A CS Degree
         </h2>
         <MainJobBoard />
+        <Footer />
       </div>
     );
   }

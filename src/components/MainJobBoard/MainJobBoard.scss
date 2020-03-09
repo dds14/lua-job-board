@@ -70,7 +70,15 @@ $nunito: "Nunito";
   opacity: 0.7;
 }
 
+.dropdown-apply-now-button:hover {
+  opacity: 0.7;
+}
+
 .apply-now-button:focus {
+  outline: none;
+}
+
+.dropdown-apply-now-button:focus {
   outline: none;
 }
 
