@@ -28,8 +28,8 @@ $nunito: "Nunito";
 }
 
 .apply-now-div {
-  //   border: 1px solid red;
-  margin-left: 5%;
+  // border: 1px solid red;
+  margin-left: 7%;
   display: flex;
   align-items: center;
 }
@@ -61,8 +61,10 @@ $nunito: "Nunito";
 }
 
 .dropdown-apply-now-button-div {
-  // border: 8px solid orange;
-  margin-top: 22px;
+  // border: 3px solid orange;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
   margin-bottom: 36px;
 }
 
@@ -130,6 +132,29 @@ $nunito: "Nunito";
   padding-right: 5%;
 }
 
+.apply-now-button-border {
+  // border: 3px solid red;
+  background-color: $main;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 12px;
+}
+
+.apply-now-button-border:hover {
+  opacity: 0.6;
+}
+
+.apply-now-button-border-dropdown:hover {
+  opacity: 0.6;
+}
+
 // DESKTOP
 @media only screen and (min-width: 800px) {
   .all-jobs {
@@ -140,6 +165,12 @@ $nunito: "Nunito";
     justify-content: space-around;
     padding-top: 12px;
     border-top: 1px solid #eeeeee;
+  }
+  .company-logo-div {
+    // border: 1px solid blue;
+    padding-right: 26px;
+    display: flex;
+    align-items: center;
   }
   .title-and-company-div {
     // border: 1px solid salmon;
@@ -156,17 +187,35 @@ $nunito: "Nunito";
     margin-bottom: 10px;
   }
   .job-board-technologies-div {
+    // border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     color: $main;
+    font-weight: bold;
   }
   .job-board-technologies-paragraph {
     margin-left: 10px;
     border: 1px solid $main;
     border-radius: 5px;
     padding: 7px;
+  }
+  .apply-now-button-border-dropdown {
+    // border: 3px solid red;
+    background-color: $main;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -236,6 +285,9 @@ $nunito: "Nunito";
   .apply-now-div {
     display: none;
   }
+  .apply-now-button-border {
+    display: none;
+  }
   .entire-dropdown-div {
     padding-top: 14px;
   }
@@ -263,5 +315,19 @@ $nunito: "Nunito";
     border: 1px solid $main;
     border-radius: 5px;
     padding: 5px;
+  }
+  .apply-now-button-border-dropdown {
+    // border: 3px solid red;
+    background-color: $main;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 12px;
   }
 }
