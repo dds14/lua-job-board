@@ -13,7 +13,7 @@ $nunito: "Nunito";
 
 .all-jobs {
   font-family: "Montserrat";
-  border: 3px solid red;
+  // border: 3px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -152,6 +152,7 @@ $nunito: "Nunito";
 // MOBILE
 @media only screen and (max-width: 800px) {
   .all-jobs {
+    // border: 1px solid orange;
     width: 100%;
     min-height: 10vh;
     margin: 0 auto;
@@ -160,16 +161,20 @@ $nunito: "Nunito";
     padding-left: 10px 0;
     padding-right: 10px 0;
     margin-bottom: 0%;
-    border: 1px solid black;
+    border: 1px solid rgb(213, 213, 213);
+  }
+  .company-logo-div {
+    width: 20%;
+    // border: 1px solid orange;
   }
   .company-logo {
     display: block;
-    max-width: 71px;
-    min-width: 71px;
-    max-height: 45px;
+    max-width: 62px;
+    min-width: 62px;
+    min-height: 46px;
+    max-height: 46px;
     width: auto;
     height: auto;
-    margin-left: 5%;
   }
   .company-div {
     // border: 1px solid orange;
@@ -184,15 +189,15 @@ $nunito: "Nunito";
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 60%;
+    width: 65%;
     white-space: pre-line;
   }
   .title-div {
     // border: 1px solid blue;
     max-height: 42%;
-    font-size: 17px;
+    font-size: 20px;
     padding-top: 4%;
-    font-weight: 800;
+    font-weight: bolder;
   }
   .company-paragraph {
     margin-right: 2.5%;
@@ -205,13 +210,13 @@ $nunito: "Nunito";
     // border: 1px solid red;
     font-weight: lighter;
     position: absolute;
-    right: 3%;
+    right: 2%;
   }
   .apply-now-div {
     display: none;
   }
   .entire-dropdown-div {
-    padding-top: 18px;
+    padding-top: 14px;
   }
   .dropdown-job-description {
     font-size: 16px;
