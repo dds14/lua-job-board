@@ -35,14 +35,35 @@ export default class Contact extends Component {
             <p>As of right now, we provide the following resources:</p>
             <h4 className="about-lua-resource-list">
               💻 A job board, that only displays jobs that don't require CS
-              degrees
+              degrees{" "}
+              <a
+                href="https://luatech.io/job-board"
+                target="_blank"
+                className="typical-link"
+              >
+                (see it here)
+              </a>
             </h4>
             <h4 className="about-lua-resource-list">
-              📩 A newsletter, where we send out the best jobs we find each week
+              📩 A newsletter, where we send out the best jobs we find each week{" "}
+              <a
+                href="https://jobs.trylua.com/devjobs"
+                target="_blank"
+                className="typical-link"
+              >
+                (sign up here)
+              </a>
             </h4>
             <h4 className="about-lua-resource-list">
               📚 A blog, where we interview successful developers, bootcamp
-              founders, and others in the industry so you can learn from them.
+              founders, and others in the industry so you can learn from them.{" "}
+              <a
+                href="https://luatech.io/blog"
+                target="_blank"
+                className="typical-link"
+              >
+                (read them here)
+              </a>
             </h4>
           </div>
           <h2 className="who-runs-lua-paragraph">
