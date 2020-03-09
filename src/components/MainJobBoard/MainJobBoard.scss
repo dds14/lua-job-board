@@ -23,9 +23,12 @@ $nunito: "Nunito";
   justify-content: center;
 }
 
+.pre-dropdown-container:hover {
+  cursor: pointer;
+}
+
 .all-jobs:hover {
   background-color: #eeeeee;
-  cursor: pointer;
 }
 
 .apply-now-div {
