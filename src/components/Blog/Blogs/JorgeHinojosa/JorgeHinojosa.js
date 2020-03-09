@@ -224,7 +224,7 @@ export default class JorgeHinojosa extends Component {
               <br></br>
               <br></br>
               <a
-                href="linkedin.com/in/jorge-hinojosa/"
+                href="https://www.linkedin.com/in/jorge-hinojosa/"
                 target="_blank"
                 className="blog-post-contact-links"
               >
@@ -233,7 +233,7 @@ export default class JorgeHinojosa extends Component {
               <br></br>
               <br></br>
               <a
-                href="jorge-hinojosa.github.io/portfolio/"
+                href="https://www.jorge-hinojosa.github.io/portfolio/"
                 target="_blank"
                 className="blog-post-contact-links"
               >
