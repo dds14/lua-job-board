@@ -23,155 +23,13 @@ $nunito: "Nunito";
   justify-content: center;
 }
 
-// DESKTOP
-@media only screen and (min-width: 900px) {
-  .all-jobs {
-    font-family: "Montserrat";
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    border-top: 1px solid #eeeeeef1;
-  }
-}
-
 .all-jobs:hover {
   background-color: #eeeeee;
 }
 
-@media only screen and (max-width: 800px) {
-  .all-jobs {
-    width: 100%;
-    min-height: 10vh;
-    margin: 0 auto;
-    display: flex;
-    padding: 10px 0;
-    margin-bottom: 0%;
-    border: 1px solid black;
-  }
-  .all-jobs:hover {
-    background-color: #eeeeee;
-  }
+.dropdown-job-description {
+  font-size: 14px;
 }
-
-.company-logo-div {
-  //   border: 1px solid blue;
-  display: flex;
-  align-items: center;
-}
-
-.company-logo {
-  width: 100px;
-  height: 100px;
-}
-
-@media only screen and (max-width: 800px) {
-  .company-logo {
-    display: block;
-    max-width: 71px;
-    min-width: 71px;
-    max-height: 45px;
-    width: auto;
-    height: auto;
-    margin-left: 5%;
-  }
-}
-
-// DESKTOP
-@media only screen and (min-width: 90px) {
-  .title-and-company-div {
-    // border: 1px solid salmon;
-    width: 40%;
-  }
-}
-
-// MOBILE
-@media only screen and (max-width: 800px) {
-  .title-and-company-div {
-    // border: 1px solid salmon;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 60%;
-    white-space: pre-line;
-  }
-}
-
-.title-div {
-  font-size: 26px;
-  font-weight: 800;
-  overflow-wrap: break-word;
-}
-
-@media only screen and (max-width: 800px) {
-  .title-div {
-    // border: 1px solid blue;
-    max-height: 42%;
-    font-size: 17px;
-    padding-top: 4%;
-    font-weight: 800;
-  }
-}
-
-.company-div {
-  // border: 1px solid orange;
-  display: flex;
-  justify-content: center;
-  margin-top: 2%;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-@media only screen and (max-width: 800px) {
-  .company-div {
-    // border: 1px solid orange;
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    font-size: 15px;
-    font-weight: normal;
-  }
-}
-
-.company-paragraph {
-  margin-right: 2.5%;
-}
-
-.location-paragraph {
-  margin-left: 2.5%;
-  font-size: 18px;
-}
-
-@media only screen and (max-width: 800px) {
-  .company-paragraph {
-    margin-right: 2.5%;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .location-paragraph {
-    margin-left: 2.5%;
-    font-size: 15px;
-  }
-}
-
-.days-ago-div {
-  //   border: 1px solid red;
-  margin-left: 5%;
-  display: flex;
-  align-items: center;
-}
-
-@media only screen and (max-width: 800px) {
-  .days-ago-div {
-    // border: 1px solid red;
-    font-weight: lighter;
-    position: absolute;
-    right: 1%;
-  }
-}
-
 .apply-now-div {
   //   border: 1px solid red;
   margin-left: 5%;
@@ -200,8 +58,127 @@ $nunito: "Nunito";
   outline: none;
 }
 
+.company-logo-div {
+  //   border: 1px solid blue;
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.title-div {
+  font-size: 26px;
+  font-weight: 800;
+  overflow-wrap: break-word;
+}
+
+.company-div {
+  // border: 1px solid orange;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.company-paragraph {
+  margin-right: 2.5%;
+}
+
+.location-paragraph {
+  margin-left: 2.5%;
+  font-size: 18px;
+}
+
+.days-ago-div {
+  //   border: 1px solid red;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+// DESKTOP
+@media only screen and (min-width: 900px) {
+  .all-jobs {
+    font-family: "Montserrat";
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #eeeeee;
+  }
+  .title-and-company-div {
+    // border: 1px solid salmon;
+    width: 40%;
+  }
+}
+
+// MOBILE
 @media only screen and (max-width: 800px) {
+  .all-jobs {
+    width: 100%;
+    min-height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0;
+    margin-bottom: 0%;
+    border: 1px solid black;
+  }
+  .company-logo {
+    display: block;
+    max-width: 71px;
+    min-width: 71px;
+    max-height: 45px;
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+  }
+  .company-div {
+    // border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .title-and-company-div {
+    // border: 1px solid salmon;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 60%;
+    white-space: pre-line;
+  }
+  .title-div {
+    // border: 1px solid blue;
+    max-height: 42%;
+    font-size: 17px;
+    padding-top: 4%;
+    font-weight: 800;
+  }
+  .company-paragraph {
+    margin-right: 2.5%;
+  }
+  .location-paragraph {
+    margin-left: 2.5%;
+    font-size: 15px;
+  }
+  .days-ago-div {
+    // border: 1px solid red;
+    font-weight: lighter;
+    position: absolute;
+    right: 1%;
+  }
   .apply-now-div {
     display: none;
   }
 }
+
+// ??? DESKTOP
+// @media only screen and (min-width: 90px) {
+
+// }
