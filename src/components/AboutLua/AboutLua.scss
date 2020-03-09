@@ -63,6 +63,10 @@
   text-align: left;
 }
 
+.the-lua-team {
+  color: $main;
+}
+
 @media only screen and (min-width: 1000px) {
   .entire-about-page {
     margin-top: 5%;
@@ -81,14 +85,17 @@
     margin-bottom: 52px;
   }
   .about-lua-paragraph {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.5;
     margin-top: 52px;
     margin-left: 5%;
   }
+  .who-runs-lua-paragraph {
+    font-size: 26px;
+  }
   .about-snippet-div {
     // border: 5px solid red;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 5%;
     margin-right: 5%;
     // width: 100%;
@@ -104,10 +111,18 @@
   }
   .about-lua-resource-list {
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 12px;
   }
 
   .who-runs-lua-div {
+    font-size: 20px;
     margin-bottom: 100px;
+  }
+  .as-of-now {
+    font-weight: bold;
+  }
+  .the-lua-team {
+    margin-top: 8px;
   }
 }

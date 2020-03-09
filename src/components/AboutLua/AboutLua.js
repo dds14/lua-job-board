@@ -32,7 +32,9 @@ export default class Contact extends Component {
               self-taught coders to navigate the job market, find jobs, and land
               them.
             </p>
-            <p>As of right now, we provide the following resources:</p>
+            <p className="as-of-now">
+              As of right now, we provide the following resources:
+            </p>
             <h4 className="about-lua-resource-list">
               💻 A job board, that only displays jobs that don't require CS
               degrees{" "}
@@ -72,10 +74,27 @@ export default class Contact extends Component {
           </h2>
           <div className="who-runs-lua-div">
             <p>
-              Lua was started by former bootcamp graduates. We saw firsthand how
-              difficult the journey can be. From not knowing how to write a line
-              of code, to landing fully remote developer positions within a
-              year, we learned a lot along the way.
+              Lua was started by former bootcamp graduates. We didn't know the
+              difference between Java and JavaScript when we started our journey
+              to becoming developers. We saw firsthand how difficult the path to
+              enter the tech industry can be.
+              <br></br>
+              <br></br>
+              From learning how to become a developer (or designer, or data
+              scientist!), to actually becoming one, there's not many good
+              resources to help you on the journey - and that's a problem.
+              <br></br>
+              <br></br>
+              Our goal is to help solve this, and provide a resource for you to
+              break into the tech industry without a CS degree.
+              <br></br>
+              <br></br>
+              From your first line of code, to your first job offer, we hope to
+              help guide you along the way.
+              <br></br>
+              <br></br>
+              Good luck,
+              <p className="the-lua-team">The Lua Team</p>
             </p>
             <p></p>
           </div>
