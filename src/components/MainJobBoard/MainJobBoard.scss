@@ -7,7 +7,7 @@ $nunito: "Nunito";
 // delete
 .test-header {
   font-size: 42px;
-  margin-top: 3%;
+  // margin-top: 3%;
   margin-bottom: 4%;
 }
 
@@ -27,9 +27,6 @@ $nunito: "Nunito";
   background-color: #eeeeee;
 }
 
-.dropdown-job-description {
-  font-size: 14px;
-}
 .apply-now-div {
   //   border: 1px solid red;
   margin-left: 5%;
@@ -48,6 +45,25 @@ $nunito: "Nunito";
   font-weight: bolder;
   color: white;
   border-radius: 12px;
+}
+
+.dropdown-apply-now-button {
+  background-color: $accent;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 12px;
+}
+
+.dropdown-apply-now-button-div {
+  // border: 8px solid orange;
+  margin-top: 22px;
+  margin-bottom: 36px;
 }
 
 .apply-now-button:hover {
@@ -100,20 +116,36 @@ $nunito: "Nunito";
   align-items: center;
 }
 
+.entire-dropdown-div {
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 // DESKTOP
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   .all-jobs {
     font-family: "Montserrat";
     width: 60%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    padding-top: 12px;
     border-top: 1px solid #eeeeee;
   }
   .title-and-company-div {
     // border: 1px solid salmon;
     width: 40%;
+  }
+  .dropdown-job-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .entire-dropdown-div {
+    padding-top: 12px;
+  }
+  .pre-dropdown-container {
+    margin-bottom: 10px;
   }
 }
 
@@ -124,7 +156,9 @@ $nunito: "Nunito";
     min-height: 10vh;
     margin: 0 auto;
     display: flex;
-    padding: 10px 0;
+    padding-top: 10px 0;
+    padding-left: 10px 0;
+    padding-right: 10px 0;
     margin-bottom: 0%;
     border: 1px solid black;
   }
@@ -171,14 +205,16 @@ $nunito: "Nunito";
     // border: 1px solid red;
     font-weight: lighter;
     position: absolute;
-    right: 1%;
+    right: 3%;
   }
   .apply-now-div {
     display: none;
   }
+  .entire-dropdown-div {
+    padding-top: 18px;
+  }
+  .dropdown-job-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
-
-// ??? DESKTOP
-// @media only screen and (min-width: 90px) {
-
-// }

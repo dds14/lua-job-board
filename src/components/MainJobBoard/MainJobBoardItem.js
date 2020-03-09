@@ -25,7 +25,7 @@ const MainJobBoardItem = ({ item }) => {
           </div>
           <div className="days-ago-div">{item.days_since_posted}</div>
           <div className="apply-now-div">
-            <form action={item.company_email} target="_blank">
+            <form action={item.posting_link} target="_blank">
               <button type="submit" className="apply-now-button">
                 Apply
               </button>
@@ -33,8 +33,18 @@ const MainJobBoardItem = ({ item }) => {
           </div>
         </div>
         {itemOpen && (
-          <div>
-            <p className="dropdown-job-description">{item.job_description}</p>
+          <div className="entire-dropdown-div">
+            <p className="dropdown-job-description">{item.job_description_1}</p>
+            <p className="dropdown-job-description">{item.job_description_2}</p>
+            <p className="dropdown-job-description">{item.job_description_3}</p>
+            <p className="dropdown-job-description">{item.job_description_4}</p>
+            <div className="dropdown-apply-now-button-div">
+              <form action={item.posting_link} target="_blank">
+                <button type="submit" className="dropdown-apply-now-button">
+                  Apply
+                </button>
+              </form>
+            </div>
           </div>
         )}
       </div>
