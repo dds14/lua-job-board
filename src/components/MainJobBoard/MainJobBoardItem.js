@@ -34,7 +34,7 @@ const MainJobBoardItem = ({ item }) => {
         </div>
         {itemOpen && (
           <div>
-            <h1>{item.job_description}</h1>
+            <p className="dropdown-job-description">{item.job_description}</p>
           </div>
         )}
       </div>
