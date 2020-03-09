@@ -9,8 +9,7 @@ export default class BlogHome extends Component {
     this.state = {
       blogposts: [
         {
-          blogImage:
-            "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80",
+          blogImage: "https://i.ibb.co/cwsvFkM/jorge-deadtree-portrait.jpg",
           blogTitle: "How Jorge Became A Full-Time Developer In A Year",
           blogSnippet:
             " After learning on his own for years, Jorge took the leap and went to a coding bootcamp in Dallas. Within a year, he got an offer to be a developer at Match.com!",
@@ -38,7 +37,7 @@ export default class BlogHome extends Component {
       <div className="display-influencers">
         <h1 className="home-influencers-title">The Lua Blog</h1>
         <h2 className="home-influencers-tagline">
-          Learn From Successful Self-Taught And Bootcamp Grads
+          Learn From Successful Self-Taught Coders And Bootcamp Grads
         </h2>
         <div className="whole-div">
           {this.state.blogposts.map((val, index) => {
@@ -54,8 +53,13 @@ export default class BlogHome extends Component {
                     />
                   </Link>
                 </div>
-                <div className="home-account-atname">{val.blogTitle}</div>
-                <div className="home-follower-count">{val.blogSnippet}</div>
+                <Link
+                  to="/bootcamp-grad-landed-developer-job"
+                  className="blog-home-title-link"
+                >
+                  <div className="home-account-atname">{val.blogTitle}</div>
+                  <div className="home-follower-count">{val.blogSnippet}</div>
+                </Link>
                 {/* <div className="home-average-likes">{"Average Likes: "}</div> */}
                 {/* <div className="home-price">{"Engagement Rate: "}</div> */}
                 {/* <div className="home-price">{"Target Audience: "}</div> */}

@@ -115,6 +115,11 @@
   // padding-left: 35px;
 }
 
+.blog-home-title-link {
+  text-decoration: none;
+  color: black;
+}
+
 // .home-contact-influencer-button {
 //   font-size: 16px;
 //   display: flex;
@@ -164,9 +169,14 @@
   outline: none;
 }
 
+// MOBILE
 @media only screen and (max-width: 900px) {
   .home-influencers-title {
     font-size: 40px;
+  }
+  .home-influencers-tagline {
+    padding-left: 6%;
+    padding-right: 6%;
   }
   .image-div {
     // border: 1px solid blue;
@@ -203,13 +213,13 @@
   }
   .home-follower-count {
     margin-top: 8px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
   .home-account-atname {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
   }
 }
