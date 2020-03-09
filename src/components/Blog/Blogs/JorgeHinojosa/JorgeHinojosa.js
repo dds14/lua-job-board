@@ -18,7 +18,7 @@ export default class JorgeHinojosa extends Component {
       <div className="entire-blog-page">
         <div className="blog-info-container">
           <h1 className="blog-header">
-            This Developer Graduated Bootcamp And Landed A Job At Match.com
+            How This Developer Graduated Bootcamp And Landed A Job At Match.com
           </h1>
           <hr className="blog-divider"></hr>
           {/* <h2>Bootcamp Grad or Self-Taught Developer?</h2> */}
@@ -204,6 +204,42 @@ export default class JorgeHinojosa extends Component {
               Even if it’s the boring To-Do list app we all love, make it
               prettier and more badass each time you build it. Or take my idea
               and build a Pokedex!
+            </p>
+          </div>
+          <h2 className="blog-paragraph-header">
+            Thanks a lot for doing this interview, Jorge. How can our readers
+            get in touch with you?
+            <br></br>
+          </h2>
+          <div className="blog-paragraph-div">
+            Sure thing, I'll add my contact info below. Feel free to reach out!
+            <p>
+              <a
+                href="mailto:jorgexhinojosa@gmail.com"
+                target="_blank"
+                className="blog-post-contact-links"
+              >
+                jorgexhinojosa@gmail.com
+              </a>
+              <br></br>
+              <br></br>
+              <a
+                href="linkedin.com/in/jorge-hinojosa/"
+                target="_blank"
+                className="blog-post-contact-links"
+              >
+                My Linkedin (click here)
+              </a>
+              <br></br>
+              <br></br>
+              <a
+                href="jorge-hinojosa.github.io/portfolio/"
+                target="_blank"
+                className="blog-post-contact-links"
+              >
+                My Portfolio (click here)
+              </a>
+              <br></br>
             </p>
           </div>
         </div>

@@ -36,18 +36,23 @@ export default class BlogHome extends Component {
   render() {
     return (
       <div className="display-influencers">
-        <h1 className="home-influencers-title">Lua Blog</h1>
+        <h1 className="home-influencers-title">The Lua Blog</h1>
+        <h2 className="home-influencers-tagline">
+          Learn From Successful Self-Taught And Bootcamp Grads
+        </h2>
         <div className="whole-div">
           {this.state.blogposts.map((val, index) => {
             return (
               <div className="overall-account-display">
                 {/* <div className="home-account-name">{"Account Name"}</div> */}
                 <div className="image-div">
-                  <img
-                    src={val.blogImage}
-                    alt="influencer-profile-picture"
-                    className="home-profile-picture"
-                  />
+                  <Link to="/bootcamp-grad-landed-developer-job">
+                    <img
+                      src={val.blogImage}
+                      alt="influencer-profile-picture"
+                      className="home-profile-picture"
+                    />
+                  </Link>
                 </div>
                 <div className="home-account-atname">{val.blogTitle}</div>
                 <div className="home-follower-count">{val.blogSnippet}</div>

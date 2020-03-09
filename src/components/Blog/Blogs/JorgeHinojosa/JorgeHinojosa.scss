@@ -23,7 +23,7 @@
 
 .blog-header {
   font-size: 44px;
-  margin-top: 72px;
+  margin-top: 180px;
   margin-bottom: 72px;
   font-weight: bold;
 }
@@ -53,6 +53,12 @@
   text-align: left;
 }
 
+.blog-post-contact-links {
+  text-decoration: none;
+  color: $main;
+}
+
+// MOBILE
 @media only screen and (max-width: 800px) {
   .entire-blog-page {
     height: 60%;
@@ -60,9 +66,9 @@
     flex-direction: column;
   }
   .blog-header {
-    font-size: 42px;
-    margin-top: 72px;
-    margin-bottom: 52px;
+    font-size: 34px;
+    margin-top: 52px;
+    margin-bottom: 42px;
   }
   .blog-paragraph-header {
     font-size: 24px;
@@ -72,7 +78,7 @@
   }
   .blog-paragraph-div {
     // border: 5px solid red;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 5%;
     margin-right: 5%;
     // width: 100%;
