@@ -26,7 +26,7 @@ const MainJobBoardItem = ({ item }) => {
               <p className="job-board-technologies-paragraph">{item.tech_1} </p>
               <p className="job-board-technologies-paragraph">{item.tech_2}</p>
               <p className="job-board-technologies-paragraph">{item.tech_3}</p>
-              <p className="job-board-technologies-paragraph">{item.tech_4}</p>
+              {/* <p className="job-board-technologies-paragraph">{item.tech_4}</p> */}
             </div>
           </div>
           <div className="days-ago-div">{item.days_since_posted}</div>
