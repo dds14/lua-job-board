@@ -146,8 +146,8 @@
   margin-top: 28px;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right: 18px;
-  padding-left: 18px;
+  padding-right: 58px;
+  padding-left: 58px;
   font-family: "Quicksand", sans-serif;
   letter-spacing: 2px;
   margin-bottom: 28px;
@@ -204,15 +204,18 @@
   }
 
   .overall-account-display {
-    // border: 1px solid greenyellow;
+    border: 1px solid black;
+    border-radius: 14px;
+    padding-top: 36px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 12px;
+    // margin-bottom: 12px;
   }
   .home-follower-count {
     margin-top: 8px;
+    margin-bottom: 12px;
     font-size: 18px;
     line-height: 1.5;
     padding-left: 3%;
@@ -221,6 +224,9 @@
   .home-account-atname {
     font-size: 24px;
     font-weight: bold;
+  }
+  .blog-read-more-button {
+    margin-bottom: 0px;
   }
 }
 
@@ -231,6 +237,8 @@
     padding-left: 5%;
     padding-right: 5%;
     max-width: 100%;
+    font-size: 22px;
+    margin-bottom: 14px;
   }
   .overall-account-display {
     max-width: 40%;
@@ -241,11 +249,16 @@
     justify-content: center;
   }
   .home-account-atname {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
   }
   .display-influencers {
     margin-top: 152px;
+  }
+  .overall-account-display {
+    border: 1px solid black;
+    border-radius: 14px;
+    padding-top: 36px;
   }
 }
 
