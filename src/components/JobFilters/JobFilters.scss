@@ -1,0 +1,41 @@
+.filters-container {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.filter-button {
+  width: 120px;
+  height: 60px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: bolder;
+  color: black;
+
+  h2 {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    border-bottom: 3px solid red;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.active-ui {
+  border-bottom: 3px solid #9a33fe;
+}
+
+.passive-ui {
+  border-bottom: 3px solid white;
+}

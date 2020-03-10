@@ -51,7 +51,10 @@ const MainJobBoardDisplayPage = () => {
         </a>{" "}
         to be notified when they are added.
       </h2>
-      <JobFilters applyFilter={setActiveFilter} />
+      <JobFilters
+        activeFilter={activeFilter}
+        setActiveFilter={setActiveFilter}
+      />
       <MainJobBoard jobs={jobs} />
       <Footer />
     </div>
