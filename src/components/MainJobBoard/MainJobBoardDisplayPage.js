@@ -1,43 +1,64 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
+import axios from "axios";
+import "./MainJobBoardDisplayPage.scss";
+import JobFilters from "../JobFilters/JobFilters";
 import Footer from "../Footer/Footer";
 import MainJobBoard from "./MainJobBoard";
-import "./MainJobBoardDisplayPage.scss";
+import { JOB_FILTERS } from "../JobFilters/job_filters";
 
-export default class MainJobBoardDisplayPage extends Component {
-  constructor() {
-    super();
-    this.state = {
-      readytouse: []
-    };
-  }
+const MainJobBoardDisplayPage = () => {
+  const [jobs, setJobs] = useState([]);
+  const [activeFilter, setActiveFilter] = useState(JOB_FILTERS.NONE);
 
-  componentDidMount() {
+  useEffect(() => {
     window.scrollTo(0, 0);
-  }
+    axios.get("/getjobs").then(res => {
+      filterJobs(res.data);
+    });
+  }, [activeFilter]);
 
-  render() {
-    return (
-      <div className="entire-job-board-display-page">
-        <h1 className="job-board-title">Job Board</h1>
-        <h2 className="job-board-tagline">
-          🔥 None Of These Jobs Require A CS Degree
-        </h2>
-        <h2 className="job-board-coming-soon">
-          We're adding a filter for roles (i.e. sort by UI/UX only), as well as
-          more cities soon. Sign up{" "}
-          <a
-            href="https://jobs.trylua.com/devjobs"
-            className="job-board-coming-soon-signup"
-            target="_blank"
-          >
-            here
-          </a>{" "}
-          to be notified when it goes live.
-        </h2>
-        <MainJobBoard />
-        <Footer />
-      </div>
-    );
-  }
-}
+  const filterJobs = jobs => {
+    if (activeFilter === JOB_FILTERS.NONE) {
+      setJobs(jobs);
+    } else {
+      const filteredJobs = [];
+      jobs.forEach(job => {
+        for (let i = 0; i < activeFilter.length; i++) {
+          if (job.job_name.includes(activeFilter[i])) {
+            filteredJobs.push(job);
+          }
+        }
+      });
+      setJobs(filteredJobs);
+    }
+  };
+
+  return (
+    <div className="entire-job-board-display-page">
+      <h1 className="job-board-title">Job Board</h1>
+      <h2 className="job-board-tagline">
+        🔥 None Of These Jobs Require A CS Degree
+      </h2>
+      <h2 className="job-board-coming-soon">
+        UI/UX and Data Science positions coming soon. Sign up{" "}
+        <a
+          href="https://jobs.trylua.com/devjobs"
+          className="job-board-coming-soon-signup"
+          target="_blank"
+        >
+          here
+        </a>{" "}
+        to be notified when they are added.
+      </h2>
+      <JobFilters
+        activeFilter={activeFilter}
+        setActiveFilter={setActiveFilter}
+      />
+      <MainJobBoard jobs={jobs} />
+      <Footer />
+    </div>
+  );
+};
+
+export default MainJobBoardDisplayPage;
