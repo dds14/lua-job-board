@@ -1,15 +1,37 @@
 import React, { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
-import MainJobBoard from "./MainJobBoard";
+import axios from 'axios';
 import "./MainJobBoardDisplayPage.scss";
+import MainJobBoard from "./MainJobBoard";
+import Footer from "../Footer/Footer";
+import { JOB_FILTERS } from './job_filters';
 
 const MainJobBoardDisplayPage = () => {
-  // const [readyToUse, setReadyToUse] = useState([]);
+  const [jobs, setJobs] = useState([]);
+  const [activeFilter, setActiveFilter] = useState(JOB_FILTERS.NONE);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    axios.get("/getjobs").then(res => {
+      filterJobs(res.data)
+    });
+  }, [activeFilter]);
+
+  const filterJobs = (jobs) => {
+    if (activeFilter === JOB_FILTERS.NONE) {
+      setJobs(jobs)
+    } else {
+      const filteredJobs = []
+      jobs.forEach(job => {
+        for (let i = 0; i < activeFilter.length; i++) {
+          if (job.job_name.includes(activeFilter[i])) {
+            filteredJobs.push(job);
+          }
+        }
+      })
+      setJobs(filteredJobs);
+    }
+  }
 
   return (
     <div className="entire-job-board-display-page">
@@ -28,7 +50,7 @@ const MainJobBoardDisplayPage = () => {
         </a>{" "}
         to be notified when they are added.
       </h2>
-      <MainJobBoard />
+      <MainJobBoard jobs={jobs}/>
       <Footer />
     </div>
   );
