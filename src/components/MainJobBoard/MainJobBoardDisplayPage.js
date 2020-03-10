@@ -24,7 +24,8 @@ export default class MainJobBoardDisplayPage extends Component {
           🔥 None Of These Jobs Require A CS Degree
         </h2>
         <h2 className="job-board-coming-soon">
-          UI/UX and Data Science positions coming soon. Sign up{" "}
+          We're adding a filter for roles (i.e. sort by UI/UX only), as well as
+          more cities soon. Sign up{" "}
           <a
             href="https://jobs.trylua.com/devjobs"
             className="job-board-coming-soon-signup"
@@ -32,7 +33,7 @@ export default class MainJobBoardDisplayPage extends Component {
           >
             here
           </a>{" "}
-          to be notified when they are added.
+          to be notified when it goes live.
         </h2>
         <MainJobBoard />
         <Footer />
