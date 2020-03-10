@@ -3,6 +3,12 @@
   margin: auto;
   display: flex;
   justify-content: space-around;
+
+  @media screen and (max-width: 700px) {
+    width: 375px;
+    margin: none;
+    justify-content: center;
+  }
 }
 
 .filter-button {
@@ -12,19 +18,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
   text-decoration: none;
   font-family: inherit;
   font-size: 10px;
   font-weight: bolder;
   color: black;
 
+  @media screen and (max-width: 700px) {
+    width: 93px;
+    flex-direction: column;
+    line-height: 0.1em;
+    h1 {
+      margin-left: 10px;
+    }
+  }
+
   h2 {
     margin-left: 10px;
+
+    @media screen and (max-width: 700px) {
+      margin-left: none;
+    }
   }
 
   &:hover {
     border-bottom: 3px solid red;
     cursor: pointer;
+
+    @media screen and (max-width: 700px) {
+      border-bottom: 3px solid #9a33fe;
+    }
   }
 
   &:focus {
