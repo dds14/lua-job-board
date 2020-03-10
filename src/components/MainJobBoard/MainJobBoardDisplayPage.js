@@ -41,7 +41,8 @@ const MainJobBoardDisplayPage = () => {
         🔥 None Of These Jobs Require A CS Degree
       </h2>
       <h2 className="job-board-coming-soon">
-        UI/UX and Data Science positions coming soon. Sign up{" "}
+        We add new jobs every few days. We also send out our top jobs in an
+        email before adding them here. Sign up{" "}
         <a
           href="https://jobs.trylua.com/devjobs"
           className="job-board-coming-soon-signup"
@@ -49,7 +50,7 @@ const MainJobBoardDisplayPage = () => {
         >
           here
         </a>{" "}
-        to be notified when they are added.
+        to get them.
       </h2>
       <JobFilters
         activeFilter={activeFilter}
