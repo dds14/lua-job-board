@@ -45,7 +45,7 @@ export default class Navbar extends Component {
             Contact
           </Link>
           <a
-            href="https://luajobs.com/bootcamp"
+            href="https://trymeli.com/devjobs"
             target="_blank"
             className="newsletter-navbar-a-href"
           >
